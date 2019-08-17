@@ -1,0 +1,91 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{wallpaper}
+\usepackage{palatino}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{amsmath}
+\usepackage{acronym}
+\usepackage{eso-pic} % \AddToShipoutPicture
+\usepackage{graphicx} % \includegraphics
+\usepackage{csquotes}
+\usepackage{bookmark}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{times}
+\usepackage{lingmacros}
+\usepackage{color, colortbl}
+\usepackage{tabularx}
+\usepackage{pdfpages}
+\usepackage{footnote}
+\usepackage[nottoc,numbib]{tocbibind}
+
+% Setup captions
+%\captionstyle[\centering]{\centering}
+%\changecaptionwidth
+%\captionwidth{0.8\linewidth}
+
+
+%%  Begin document
+%%  ==================================================================
+\begin{document}
+%%\todo{This is a comment that will appear in the margin}
+%%  Begin title page
+%%  ==================================================================
+    \thispagestyle{empty}
+    \ULCornerWallPaper{1}{ku-coverpage/ku-en.pdf}
+ 
+    \vspace*{-1cm}
+    \begin{center}
+        \textbf{\Large Master of Computer Science} \\
+    \end{center}
+    \vspace*{5cm} 
+    \begin{center}
+    \textbf{\Huge The Social Effect of Virtual Body Representations on the
+Observer} \\
+    \vspace*{1cm} 
+    {\Large User Performance Driven by Avatar Opponents in VR Tug-of-War} \\
+      \vspace*{1cm} 
+    Andreea A. Muresan \\
+    \texttt{zph748@alumni.ku.dk} \\
+     \vspace*{1cm} 
+    \textbf{\large Supervisors} \\
+         \vspace*{0.2cm} 
+    Henning Pohl  \\
+    \texttt{henning@di.ku.dk} \\
+         \vspace*{0.2cm} 
+    Kasper Hornbæk \\
+    \texttt{kash@diku.dk} \\
+       \vspace*{1cm} 
+   September 2019
+   
+ \end{center}
+\newpage
+\ClearWallPaper
+
+\tableofcontents
+\pagenumbering{arabic}
+\newpage
+\ClearWallPaper
+
+\input{0Abstract.tex}
+
+\input{1Introduction.tex}
+\input{2RelatedWork.tex}
+\input{3methodology.tex}
+\input{3xImplementation.tex}
+\input{3Survey.tex}
+\input{4.UserStudy.tex}
+\input{7.Conclusion.tex}
+\input{8.FutureWork.tex}
+\input{9Appendix.tex}
+
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+\end{document}
