@@ -1,40 +1,66 @@
 
 \section{User Study}
+\subsection{Piloting}
+
 
 \subsection{Experiment Design}
+We had a gender-matched, within-group experimental design for the user study and varied avatar appearance for each trial. Participants played five trials of rope-pulling with the five avatars chosen from the survey. The avatars were meant to display various degrees of strength and intimidation. We chose the weakest and strongest male and female avatars, and three equidistantly rated avatars in between. We present the values of the ratings in Section \ref{section:surveyResults}. If there were avatars with the same equidistant rating, we chose the one with the most unique design.  The avatars were randomized for each participant at the start of the experiment. This study was ran alongside another study by researchers within the department. We made a common call for participants to take part in a \textit{VR Games Study}. Their task was to assess to virtual reality games and give researchers their feedback. The two games were Tug-of-war VR and a Whack-a-mole VR. At the end of the experiment, participants had a short recorded chat with the experimenter about their experience.
 
-\subsection{Setup}
--
-- record with obs sreen and game view of participants
-
-- record video and audio
-
-Setting 
-To sustain the plausibility illusion, the setting must be consistent with a tug of rope situation.
-Feeling rope increases plausibility
-No dis tractors in the scene except for something between the avatars
-The illusion of a hole may increase anxiety, fear or trigger a more realistic response through increased arousal.
+\subsection{Setup and Measurements}
+For the experiment we used a Predator Helios 300 Acer laptop with an Nvidia GeForce GTX 1060, VRREADY graphics card. VE immersion was achieved by using a HTC Vive headset with a resolution of 2160x1200 and a refresh rate of 90Hz. 
+Players' hand movements were tracked by the Noitom HI5 Vive tracker gloves\footnote{https://hi5vrglove.com/}. The glove uses a wrist-mounted Vive tracker to generate users' presumed hand position. 
+We measure the force of participants' pulling through a digital force  with a seven-segment display. The force meter was fastened inside a box and placed on a table. We recorded the force by filming the digital display with a Intel RealSense VF0800 Developer Kit Digital Depth Camera\footnote{https://www.intelrealsense.com}.
+To hide the measuring mechanism and increase ambiguity, participants pulled a rope between two black sheets which hid the whole set up of the experiment. This setup is shown in \ref{fig:setupBlack}. The force meter was placed on a table and it was tied to a heavy piece of furniture. So that participants would not hear the sound of a boxed hitting a table when lifting the rope, a piece of cloth was placed under the box. Various amortizing materials were placed inside the box to absorb sound and prevent the force meter from being damaged. The rope was tied to an elastic cable connected to a strong spring. The spring was connected to the force meter. The elastic band offered less resistance and, as participants pulled, the spring increased resistance. This spring mechanism was designed to increase realism and offer users some resistance in order to give the impression of a force acting on the rope. The box and spring mechanism can be see in figures \ref{fig:setupRopeBox1} and \ref{fig:setupRopeBox2}.\\
 
 
+\begin{figure}[h]
+  \centering
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{Images/setup1.JPG}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{Images/setup2.JPG}
+  \end{minipage}
+  \hfill
+     \caption{Participants' view of the setup.}
+     \label{fig:setupBlack}
+\end{figure}
 
-The rope will be tied to a force gauge that will measure the pull force of each participant. The gouge is filmed and recorded. After the experiment the force is manually recorded by the experimenter and plotted at set intervals. To provide a minimum force, the rope will be attached to a strong spring, however the actual pull of another player will not be simulated. 
-Afterwards we conduct a survey in which participants rate the self-perceived force they had for each condition, and how much they felt their opponents pulled. We also measure how strong they think each opponent looked. 
-At the end we ask about the participant’s experience with the game in a short 2 minute interview and if they have any suggestions to improve it. Finally we ask the participants what they think the purpose of this experiment was in order to discard participants who showed a high awareness of the experimental aim. In the end we debrief users and tell them about the intended purpose of the experiment.
+\begin{figure}[H]
+  \centering
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{Images/rope.JPG}
+    \caption{Rope and spring tied to the meter.}
+     \label{fig:setupRopeBox1}
+    \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{Images/BoxBig.JPG}
+    \caption{Box with force meter and camera.}
+     \label{fig:setupRopeBox2}
+  \end{minipage}
+  \hfill
+    
+\end{figure}
+
+
 
 \subsection{Procedure}
-\subsection{Piloting}
-While participants must believe they are evaluating a game, it is also important that participants believe that they are playing against other humans. We provide two possible design frameworks to increase this believably. 
+Between each trial, participants answered the following questions from withing the VE. They were told to read the questions out loud and give their answers to the experimenter.  \todo{add pic of QPANEL} 
 
-We ran several pilots to see if it is feasible that participants believe they are co-located with other players and that at the end of the rope there is another human. We investigate whether participants actually feel the rope is being pulled more in one condition despite this not being implemented in any way. The question is whether appearance change in virtual reality can provide a working illusion and create a belief that is manifested in a measurable way, namely in the performance of players.
-If we cannot convince players they are co-located, then we frame our experiment in the context of designing a system to simulate force in a distributed way. Participants will be told we made a device and we are exploring its feasibility to be used in games as a distributed force transmitter. 
-To increase the belief in agency, participants are told to wave at each player before starting the game. Avatars making some form of acknowledgement of the other player will increase the believably they have agency. 
+Afterwards we conduct a survey in which participants rate the self-perceived force they had for each condition, and how much they felt their opponents pulled. We also measure how strong they think each opponent looked. 
 
-
-\subsection{Setup Adjustments}
-
+At the end we ask about the participant’s experience with the game in a short 2 minute interview and if they have any suggestions to improve it. Finally we ask the participants what they think the purpose of this experiment was in order to discard participants who showed a high awareness of the experimental aim. In the end we debrief users and tell them about the intended purpose of the experiment.
+ ipq and other survey dataafter
 \subsection{Results}
 \subsubsection{Quantitative Results}
 \subsubsection{Qualitative Observations}
 
 
 \subsection{Discussion}
+
+\subsection{Limitations}
+- spring absorbs force a participant streched the spring too much and it was replaced

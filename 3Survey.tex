@@ -1,23 +1,164 @@
 
 \section{Survey}
-To measure perceived strength in avatar designs, we ran a survey with 17 participants (8 female), aged 22-28. Participants were recruited from the university and through snowball sampling. The survey was gender matched and each participant had to rate 18 avatar thumbnails on a 5-point likert scale measuring traits perceived from their appearance, namely strength, attractiveness, intelligence and intimidation. The order of the avatars was the same for all participants, but their thumbnails were randomly selected from an initial ordered set. The survey took 10 to 15 minutes to complete. 
+Through the survey, we aim to make an informed choice when selecting the final agents for the experiment. We provide a range designs that elicit realistic perceptions of intimidation and strength. 
 
 \subsection{Survey Questions}
-Participants were told we were interested to see how people perceive traits of avatars based on their design and looks. The goal of evaluating strength and intimidation was not made completely transparent to avoid any possible bias. Initially, we gathered demographic data like gender and age. For each avatar, participants had to answer the following questions on a 5-point likert scale from 1 - Strongly disagree to 5 - Strongly agree:
+Participants were told we were interested to see how people perceive traits of avatars based on their design and looks. The goal of evaluating strength and intimidation was not made completely transparent to avoid any possible bias. We gathered demographic data like gender and age. For each avatar, participants had to answer the following questions on a 5-point Likert scale, from 1 --- \textit{Strongly disagree} to 5 --- \textit{Strongly agree}:
 
-This avatar looks attractive.
-This avatar looks strong.
-This avatar looks intelligent. 
-This avatar looks intimidating.
 
-We are not interested in measuring intelligence, however it serves the purpose of distracting participants from the specific goal of the survey. Our main interests are strength and intimidation as these variables may have the effect of changing user performance. Attractiveness is tangentially related because of the Halo Effect [9], whereby participants could be determined to assign more positive traits to the avatars. While the order of the avatars are randomized, there could still be some effect due to ordering until users adjust the framing of their ratings. A further consideration with respect to the survey responses is agency. Since social responses can vary with agency [10],  when answering the scale on intimidation, participants may depend on plausibility [11] resulting in lower intimidation responses from thumbnails of virtual humans.
-
+\begin{enumerate}
+    \item This avatar looks attractive.
+    \item This avatar looks strong.
+      \item This avatar looks intelligent.
+      \item This avatar looks intimidating.
+\end{enumerate}
+   
+We are not interested in measuring intelligence, however it serves the purpose of distracting participants from the specific goal of the survey. Our main interests are strength and intimidation, as these variables may have the effect of changing user performance. Attractiveness is tangentially related because of the Halo Effect \cite{nisbett1977halo}, whereby participants could be determined to assign more positive traits to the avatars. A further consideration with respect to the survey responses is agency. Since social responses can vary with agency \cite{fox2015avatars}, when answering the scale on intimidation, thumbnails of virtual humans may elicit lower responses that actual people.
  
-Through stratified sampling, we provide a good range of looks for the male avatars and an adequate one for female avatars due to constraints imposed by the library. Through the survey, we aim to make an informed choice about the avatars for the experiment and provide designs that elicit realistic perceptions of intimidation and strength. Please see Appendix A for a full list of avatar design choices based on the UMA library.
+\subsection{Agent Thumbnails}
+The agents were chosen through stratified sampling to display various levels of strength on a scale from \textit{weak} to \textit{very strong}. In total 36 agents were designed, 18 female and 18 male. The design procedure and implementation for these agents is described in chapter 6 \textit{Agent Design}. Section \ref{subsection:thumbnails} contains an enumeration of the images that users had to rate in this survey and represents the designed look of the agents' upper body. 
+In the tables below we present a coding of the agent thumbnails and respective conditions that will be used in the following subsections and plots.
 
-\subsection{Participants}
-\subsection{Results}
+\begin{table}[!h]
+\centering
+\begin{tabu} to 0.8\textwidth { | X[l] | X[c] | X[c] | }
+\hline
+\textbf{ID} & \textbf{Name} & \textbf{Condition}\\
+\hline
+1 & UMA\_4 & Strong\\
+\hline
+\end{tabu}
+\caption{Female agents coding.}
+\label{table:codingFemales}
+\end{table}
 
 
-\subsection{Discussion}
-\subsection{Conclusion}
+\begin{table}[!h]
+\centering
+\begin{tabu} to 0.8\textwidth { | X[l] | X[c] | X[c] | }
+\hline
+\textbf{ID} & \textbf{Name} & \textbf{Condition}\\
+\hline
+1 & UMA\_4 & Strong\\
+\hline
+\end{tabu}
+\caption{Male agents  coding.}
+\label{table:codingMales}
+\end{table}
+
+
+
+\subsection{Participants and Design}
+To measure perceived strength in our agent designs, we ran a survey with 31 participants (15 female), aged 21-60 (mean 25.5). Participants were recruited from the university and through snowball sampling. The survey was gender matched and each participant rated 18 avatar thumbnails on a 5-point Likert  scale measuring perceived strength, attractiveness, intelligence and intimidation. The order of the agent thumbnails was the same for all participants, but they were randomly selected from an initial ordered set. The survey took 10 to 15 minutes to complete.
+
+\subsection{Results and Discussion}
+\label{section:surveyResults}
+Please see section \ref{subsection:ratings} for a complete overview of all ratings given to all agents. In the tables below we present the mean ratings given female and males. The tables are ordered ascending according to the \textbf{Weighted} column.
+
+\begin{table}[H]
+\vspace{-15pt}
+    \centering
+    \addtolength{\leftskip} {-2cm}
+    \addtolength{\rightskip}{-2cm}
+    \begin{tabu}{|c|c|c|c|c|c|c|}
+     \hline
+        \textbf{ID} & \textbf{Attractive} &\textbf{Intelligent} &\textbf{Intimidating}
+        &\textbf{Strong} &\textbf{Weighted} &\textbf{UMA}\\
+        \hline
+10	& 1.93333 &	2.66667	& 1.66667 &	1.46667 &	1.56667 &	f4 c3\\
+\hline
+15 &	1.73334 &	2.46667 &	1.73334 &	1.53334	& 1.63334 &  \\
+\hline
+14 & 1.93334 & 2.8	& 2 & 1.4666 & 1.73333  & \\
+\hline
+8	& 2.46667	& 2.8	& 1.8 &	1.86667	& 1.83333 & 	\\
+\hline
+11 & 2.33333 &3& 1.6 &2.06667 & 1.83333 & \\
+\hline
+16&	2.86667 &	3&	1.73333	&2.06667 &	1.9 &	f2 c2\\
+\hline
+9 &1.8	& 2.6 &	2.2	&1.66667	 & 1.93333 & 	\\
+\hline
+13	& 2.06667	& 2.66667 & 1.93333 & 1.93333&	
+1.93333 & \\	
+\hline
+1 &2&	2.33333	&1.86667	&2.06667	& 1.96667	&\\
+\hline
+18 &	2.26667	 & 2.6 &	2.2&	2	& 2.1	&f3 c2\\
+\hline
+12&	2.4	&2.66667&	2.06667&	2.26667&	2.16667 &\\
+\hline
+7 &	1.8 &	2.13333&	2.13333&	2.33333&	2.23333 &\\
+\hline
+3&2&	2.8&	2.66667&	2.66667&	2.66667	& \\
+\hline
+5 & 1.53333 & 2.2	& 2.73333	& 3	& 2.86667 &	f1 c1 \\
+\hline
+17	& 1.6	& 2.2 &	2.86667	& 3.06667 &	2.96667 & \\
+\hline
+4	&1.73333	&2.33333&	3	&3.26667&	3.13333 &	\\
+\hline
+6	&1.66667&	2.4	&2.73333	&3.53333	& 3.13333 &\\
+\hline
+2	&1.46667	&2.2	&3.4	&3.46667	&3.43333	&F4 c1\\
+\hline
+    \end{tabu}
+
+    \caption{Female mean ratings.}
+    \label{tab:f_mean}
+\vspace{0.3cm}
+    \begin{tabu}{|c|c|c|c|c|c|c|}
+     \hline
+        \textbf{ID} & \textbf{Attractive} &\textbf{Intelligent} &\textbf{Intimidating}
+        &\textbf{Strong} &\textbf{Weighted} &\textbf{UMA}\\
+        \hline
+13	&2.625	&3.0625	&1.25&	1.25&	1.25&	m7 c3 \\
+\hline
+8	&2.5&	2.6875	&1.5625&	1.875&	1.71875&	\\
+\hline
+1&	2.1875&	2.4375	&2.125&	1.375&	1.75& \\
+\hline
+9&	1.25&	1.625&	2.125&	1.75	&1.9375&	\\
+\hline
+12&	3.5	&3.3125	&1.5625&	2.375	&1.96875&	m7 c2\\
+\hline
+11&	1.8125&	2.3125&	2&	2.25&	2.125& \\
+\hline
+15	&1.8125	&2.1875	&2.125&	2.5625&	2.34375&	\\
+\hline
+10&	2&	2.375&	2.3125&	2.4375&	2.375&	\\
+\hline
+7&	1.75&	2.8125	&2.3125&	2.75&	2.53125&	m6 c1\\
+\hline
+4&	2.375&	2.5625&	2.3125&	3.3125&	2.8125&	\\
+\hline
+16&	2.0625&	2.25&	2.375&	3.3125&	2.84375	& \\
+\hline
+18	&2.625&	2.625&	2.5625&	3.5625&	3.0625&	 \\
+\hline
+14&	2.3125&	2.5	&2.75	&3.5625	&3.15625&	\\
+\hline
+3&	1.375	&1.9375&	3.5&	3.0625&	3.28125	&m1 c2\\
+\hline
+6&	2.5625&	2.5625&	3.0625&	4.1875&	3.625&	\\
+\hline
+5&	1.5625&	2.3125&	3.5625&	4.0625	&3.8125& \\
+\hline
+17	&2.25&	2.125&	3.625&	4.6875&	4.15625	&\\
+\hline
+2&	1.9375&	2&	3.8125&	4.75&	4.28125&	m5  c1\\ 
+\hline
+    \end{tabu}
+    \caption{Male mean ratings.}
+    \label{tab:m_mean}
+\end{table}
+
+To determine the final avatars for the user study, we compounded the strength and intimidation rating and computed a final weighted score according to the following formula: $ 0.5 strength + 0.5 intimidation $. This value can be found in the \textbf{Weighted} column. 
+As a reference for the other chapters, the chosen UMAs are marked in the table in the \textbf{UMA} column. The first part of the column value represents a unique identifier for the UMA design and the second part is the condition shorthand, where C1 denotes the weak condition, C2 average and C3 strong.
+Users generally found UMA designs unattractive. Female ratings for intimidation and strength were lower than male ones.
+\todo{plot for males and females}
+
+As expected, female ratings were overall lower than male ratings. This is a limitation of the UMA DNA ranges and difference in character enhancements magnitude between  genders and races. Female upper and lower body muscle mass could be increased less than for males. Males had more defined muscle, while for female muscle tone decreased with muscle mass. Other downsides of increasing body mass for females was that leg muscles grew non-uniformly and appeared unnatural. Some other disadvantages are mentioned in the previous chapter. We consider the Morph Character System (MCS) as an alternative to UMA, however support for current Unity versions has been discontinued for this library.
+
+\subsection{Conclusion and Future Work}
+For more control over avatar variation, we can consider a custom design for the avatars using a 3D modelling tools.  UMA has the advantage of providing a simplified and fast method of generating many avatars with some degree of control over the body-related changes. Conversely, 3D tools are have a high learning curve and can be difficult for inexperienced users. To allow the same magnitude of change for all body modifications, we should implement a VR character creator in future iterations of this research.
