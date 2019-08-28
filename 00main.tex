@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper,oneside]{article}
 \usepackage{array}
+\usepackage{wrapfig,lipsum,booktabs}
 \usepackage{tabu}
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
@@ -36,7 +37,17 @@
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=cyan,
+    linktocpage
 }
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+            {-2.5ex\@plus -1ex \@minus -.25ex}%
+            {1.25ex \@plus .25ex}%
+            {\normalfont\normalsize\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
+\setcounter{tocdepth}{4}    % how many sectioning levels to show in ToC
+
 %%  Begin document
 %%  ==================================================================
 \begin{document}
@@ -88,6 +99,7 @@ Observer} \\
 \input{3xImplementation.tex}
 \input{3Survey.tex}
 \input{4.UserStudy.tex}
+\input{5.Limitations.tex}
 \input{7.Conclusion.tex}
 \input{8.FutureWork.tex}
 \input{9Appendix.tex}

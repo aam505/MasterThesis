@@ -31,22 +31,22 @@ Throughout the piloting sessions, many of the difficulties of running this study
 
 \subsection{Experiment Design}
 \label{subsection:ExperimentDesign}
-To investigate whether an agents' appearance can increase people's strength, we ran a study where participants played tug-of-war with an agent opponent in VR. We elaborate on our research aims and methodology in section \ref{section:methodology}. We had a gender-matched, within-group experimental design for the user study. We independently vary the agent's appearance on a scale from weak-looking to strong-looking. Participants played five trials of rope-pulling with the five avatars chosen from the survey. The avatars were meant to display various degrees of strength and intimidation, compounded in a final weighted score. We chose the weakest and strongest male and female avatars. For the remaining three, we chose avatars in a low-average, average and high-average strength condition. Further details about the avatars chosen for the experiment are presented in section \ref{section:surveyResults}. \\
+To investigate whether an agents' appearance can increase people's strength, we ran a study where participants played tug-of-war with an agent opponent in VR. We elaborate on our research aims and methodology in section \ref{section:methodology}. We had a gender-matched, within-group experimental design for the user study. We independently vary the agent's appearance on a 5-point scale from weak-looking to strong-looking. Participants played five trials of rope-pulling with the five avatars chosen from the survey. The avatars were meant to display various degrees of strength and intimidation, compounded in a final weighted score. We chose the weakest and strongest male and female avatars. For the remaining three, we chose avatars in a low-average, average and high-average strength condition. Further details about the avatars chosen for the experiment are presented in section \ref{section:surveyResults}. For each trial, we measure the maximum pull force (KG) for each participant, which constitutes our dependent numeric variable. We further measure perceived pull and perceived challenge on a 5-point Likert scale, with constitute our two ordinal dependent variables.\\
 \\
 Participants completed a post-experimental survey, gave feedback for each rope-pulling trial in-game and had a short chat with the experimenter at the end. All subjective questions were answered on a 5-point Likert scale.\\
 \\
 Between each rope-pull, participants rated four statements about the previous round on a 5-point Likert scale. They were presented with a panel of these questions in VR, and were asked to read the questions out-loud and give their answer to the experimenter. These questions are the following:
 \begin{itemize}
-\label{enum:presenceQuestions}
+\label{enum:panelQuestions}
 \itemsep0em
 \item \textbf{Q1}: I felt the virtual rope was realistic. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
 \item \textbf{Q2}: It looked and felt like I was the one holding the rope. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
  \item \textbf{Q3}: How much did you pull the rope? Rating: 1 (\textit{Not at all}), to 5 (\textit{Very much});
 \item \textbf{Q3}: How challenging was this round? Rating: 1 (\textit{Not at all}), to 5 (\textit{Very challenging}).
 \end{itemize}
-Q1 refers to rope realism, Q2 captures rope ownership, Q3 refers to perceived pull and Q4 refers to challenge. We will use these terms to refer to the categories of these questions in the results section.
-For the post-experimental survey, we measured participants' subjective experience on three levels: body ownership, presence and co-presence measures. \\
+Q1 refers to rope realism, Q2 captures rope ownership, Q3 refers to perceived pull and Q4 refers to challenge. We will use these terms to refer to the categories of these questions in the results section. Q3 and Q4 are two dependent variables. We present results of Q1 and Q2, however their main purpose was to give participants the impression we are evaluating rope performance.\\
 \\
+For the post-experimental survey, we measured participants' subjective experience on three levels: body ownership, presence and co-presence measures. 
 To measure presence, we retained 5 items from the igroup presence questionnaire (IPQ): \footnote{http://www.igroup.org/pq/ipq/index.php}
 \begin{itemize}
 \label{enum:presenceQuestions}
@@ -61,7 +61,7 @@ The IPQ questionnaire measures presence on three levels: spacial presence, invol
 \\
 The survey items for body ownership were taken from \cite{argelaguet2016role}. For our study, we replaced the term \textit{hand} with \textit{arm}, and changed the 7-point rating scale to a 5-point one. The following questions were retained:
 \begin{itemize}
-\label{enum:presenceQuestions}
+\label{enum:ownershipQuestions}
 \itemsep0em
     \item \textbf{Q1}: I felt as if the virtual arm moved just like I wanted it to, as if it was obeying my will. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
     \item \textbf{Q2}: I expected the virtual arm to react in the same way as my own arm. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
@@ -72,6 +72,7 @@ The survey items for body ownership were taken from \cite{argelaguet2016role}. F
 \end{itemize}
 With respect to co-presence/social presence, we retained three questions from \cite{nowak2003effect}, changed their scale to a 5-point one and replaced the term \textit{interaction partner} with \textit{opponents}. They questions are:
 \begin{itemize}
+\label{enum:copresenceQuestions}
 \itemsep0em
     \item \textbf{Q1}: My opponents were intensely involved in our interaction. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
     \item \textbf{Q2}: To what extent did you feel able to assess your opponents’ reactions?. Rating: 1 (\textit{I was unable}), to 5 (\textit{Their reactions were clear});
@@ -94,8 +95,6 @@ Players' hand movements were tracked by the Noitom HI5 Vive tracker gloves\footn
 In addition to the subjective measures presented in the previous section, we gather quantitative datam namely the maximum pulled force for each rope-pull. We measure the force of participants' pulling through a digital force meter with a seven-segment display. The force meter was fastened inside a box and placed on a table. We recorded the force by filming the digital display with a webcam, Intel RealSense VF0800 Developer Kit Digital Depth Camera\footnote{https://www.intelrealsense.com}.
 To hide the measuring mechanism, participants pulled a rope between two black sheets which hid the whole set up of the experiment. This setup is shown in figure \ref{fig:setupBlack}.\\
 The force meter was placed on a table and it was tied to a heavy piece of furniture. To dampen the sound of the box hitting the table, a piece of cloth was placed under the box. Various amortizing materials were placed inside the box to absorb sound and prevent the force meter from being damaged. The rope was tied to an elastic cable connected to a strong spring. The spring was connected to the force meter. The elastic band offered less resistance and, as participants pulled, the spring increased resistance. This spring mechanism was designed to increase realism and offer users some resistance in order to give the impression of a force acting on the rope. The box and spring mechanism can be see in figures \ref{fig:setupRopeBox1} and \ref{fig:setupRopeBox2}.\\
-
-
 \begin{figure}
   \centering
   \captionsetup{justification=centering,margin=0.1cm}
@@ -137,8 +136,24 @@ For each trial, users pulled the rope for 10 seconds. Before that, they were in 
 \subsection{Participants}
 \label{subsection:participantsExperiment}
 In order to give the appearance of a gaming study, we designed a poster to recruit people for the experiment. We placed this poster (\ref{subsection:poster}) around the university campus and  used it for recruiting messages. For the user study, we recruited a total of 28 participants (17 female) from the university campus and local Facebook groups. They were between 21 and 34 years old $(M = 24.42, SD = 3.06)$. Participants were unable to take part in the study if they previously completed the avatar appearance survey. We discarded the results of 2 participants (1 female) due to invalid data. Of the remaining ones, 9 participants had never used VR before and 16 had never played real-life tug-of-war. Participants were rewarded with a gift valued at 100 danish krone for taking part in the whole study.
-\subsection{Results}
-The results were manually logged by the experimenter. To measure the maximum force, we looked at the force meter data from the end of the countdown, at the beginning of the \textit{START} message, until the end of the \textit{STOP} message. In the plots below, we present data in terms of ordering and condition. By ordering, we mean the order in which participants saw the appearances, labeled as \textit{Trial}. By condition we mean the condition of the opponent participants faced, labeled as \textit{Condition}. Trial 1 refers to the first trial of rope-pulling participants performed, out of a total of five. Trial 2 refers to the second one and so on. The condition captures the independent variable and represents a numerical mapping from 1 to 5 to the appearance variable, increasing by strength/intimidation. Condition 1 refers to the weakest looking chosen avatar according to the weighted score (see \ref{fig:SurveyRatedFemalesChosen},\ref{fig:SurveyRatedMalesChosen}) and condition 5 refers to the strongest looking avatars. We also display our results by gender.
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering,margin=0.1cm}
+\hspace*{\fill}
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{Images/Participants/m1.jpg}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{Images/Participants/f3.JPG}
+  \end{minipage}
+\hspace*{\fill}
+     \caption{Participants playing tug-of-war VR  .}
+     \label{fig:participants}
+\end{figure}
+\subsection{Results and Discussion}
+The results were manually logged by the experimenter. To measure the maximum force, we looked at the force meter data from the end of the countdown, at the beginning of the \textit{START} message, until the end of the \textit{STOP} message. In the plots below, we present data in terms of ordering and condition. By ordering, we mean the order in which participants saw the appearances, labeled as \textit{Trial}. By condition we mean the condition of the opponent participants faced, labeled as \textit{Condition}. Trial 1 refers to the first trial of rope-pulling participants performed, out of a total of five. Trial 2 refers to the second one and so on. The condition captures the independent variable and represents a numerical mapping from 1 to 5 to the appearance variable, increasing by strength/intimidation. Condition 1 refers to the weakest looking chosen avatar according to the weighted score (see \ref{fig:SurveyRatedFemalesChosen},\ref{fig:SurveyRatedMalesChosen}) and condition 5 refers to the strongest looking avatars. We also display our results by gender. For each subsection we give an overview of the data and then we discuss and speculate on the results. We may also refer to participants' feedback to support and frame our quantitative results.
 \subsubsection{Conditions per Trial}
 \begin{figure}[H]
 \vspace*{-3mm}
@@ -148,24 +163,9 @@ The results were manually logged by the experimenter. To measure the maximum for
  \caption{Number of conditions per trial.}
  \label{fig:condPerTrial}
   \end{figure}
-\begin{figure}[H]
-\vspace*{-10mm}
-\centering
-\captionsetup{justification=centering,margin=0.1cm}
-\includegraphics[width=0.9\textwidth]{Files/Plots/condition_by_trial_females.png}
- \caption{Number of conditions per trial for females.}
- \label{fig:condPerTrialF}
-\end{figure}
 
-\begin{figure}[H]
-\vspace*{-10mm}
-\centering
-\captionsetup{justification=centering,margin=0.1cm}
-\includegraphics[width=0.9\textwidth]{Files/Plots/condition_by_trial_males.png}
-\caption{Number of conditions per trial for males.}
-\label{fig:condPerTrialM}
-\end{figure}
-In the above pictures we show the distribution of each condition for each trial. Since the conditions were randomized there may be an effect of over-representation.
+In the above pictures we show the distribution of each condition for each trial. Since the conditions were randomized there may be an effect of over-representation. The fifth trial seems to be the most balanced representation wise.
+We also had more female participants and thus more female avatars were evaluated. For an overview of the distribution of conditions per trial for males and females please section \ref{subsection:additionalData} figures \ref{fig:condPerTrialM} and \ref{fig:condPerTrialF}.
 
 \subsubsection{Appearance Ratings}
 \begin{figure}[H]
@@ -190,6 +190,11 @@ In the above pictures we show the distribution of each condition for each trial.
 Participants rated the appearance of same-gender avatars on attractiveness, intimidation, intelligence and strength. In the above  figures we present the weighed results of those ratings for female (\ref{fig:weightedFEx}) and male (\ref{fig:weightedMEx}) avatars. The weighted value is computed as $weighted=0.5strength+0.5intimidation$.
 Male participants rated the avatars as expected, increasing in intimidation and strength by condition. For females, the avatar in condition 2 (low-average) was rated as highest in intimidation and strength, while the avatar in condition 5 (strong) came second. All ratings for these avatars and their thumbnails can be found in section \ref{subsection:thumbnailsExperiment}. 
 
+
+The ratings for female avatars for the VR tug-of-war were inconsistent with our results from the survey. There were several downsides when designing the female agents (detailed in section \ref{section:AgentDesign}) which lead to females being perceived overall as less strong and intimidating, even in the survey. One difference between the 2 studies is that participants playing tug-of-war could see the full body of the avatar in VR as well. On the other hand, participants filling in the survey only saw their thumbnails. The resolution of the headset could also impair the ability of people seeing the avatars very clearly. One participant mentioned that she would have liked to see the females with hair. It is possible the lack of hair on females might have put off participants instead of making strength cues more salient
+
+- one participant mentioned the avatars were increasing in strength so it was obvious
+
 \subsubsection{Force Meter Results}
 \begin{figure}[H]
 \hspace*{\fill}
@@ -212,96 +217,152 @@ Male participants rated the avatars as expected, increasing in intimidation and 
          \centering
          \includegraphics[width=\textwidth]{Files/Plots/forceNforce_by_cond_swarm.png}
          \caption{All N1 by condition. }
-         \label{fig:allForceNCond}
+         \label{fig:allN1NCond}
      \end{subfigure}
      \hspace*{\fill}
      \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Files/Plots/forceNforce_mean_by_condition.png}
          \caption{Mean of N1  by condition. }
-         \label{fig:allForceNCond}
+         \label{fig:meanN1Cond}
      \end{subfigure} 
      \hspace*{\fill}
          \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Files/Plots/forceNormalized_by_cond_swarm.png}
          \caption{All N2 by condition.}
-         \label{fig:allForceNorm}
+         \label{fig:allN2Norm}
      \end{subfigure}
 \hspace*{\fill}
      \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Files/Plots/forceNormalized_mean_by_condition.png}
          \caption{Mean of N2 by condition.}
-         \label{fig:allForceNormMean}
+         \label{fig:meanN2Cond}
      \end{subfigure} 
-     
       \caption{All force values by condition. Lines on bars denote confidence intervals.}
          \label{fig:allForceCond}
 \end{figure} 
+\clearpage
+In the above figures we show an overview of all the data measured from the force meter, namely the maximum force pulled for each trial in kilograms. We normalize this data in two ways, N1 and N2. For N1, we subtract from all trials the value in the first trial, for each participant. For N2, we normalize values between 0 and 1 with min-max normalization. We take the minimum and maximum for each participant from all their respective trials. The normalization formulas are as follows: 
+\[ N1_i^p=X_i^p-X_1^p, i \in \{1,2,3,4,5\},\; i \; trial \; number,\; p \in PIDS \]
+\[N1= \{ N1_i^p |  i \in \{1,2,3,4,5\},\; i \; trial \; number,\; p \in PIDS \}  \]
+
+\[ N2_i^p=\frac{X_i^p-X_{min}^p}{x_{max}^p-x_{min}^p} , i \in \{1,2,3,4,5\},\; i \; trial \; number,\; p \in PIDS\]
+
+\[N2= \{ N2_i^p |  i \in \{1,2,3,4,5\},\; i \; trial \; number,\; p \in PIDS \}  \]
+
+The force meter measurements do not seem to support our hypothesis, that the stronger avatar looks the harder people would pull.  The differences between trials are not very significant and the confidence intervals vary. The data shows participants pulled slightly more in the third condition (average). In the tables below we present mean and standard deviation per trial and condition, while for all force data we have $M= 17.76153, \; SD=8.29289$.
+Participants seemed to pull the strongest in the second trial (see figure \ref{fig:allForceTrial}). There appears to be more variation by condition than by trial, but it is unclear whether order has some immediate effect which is stronger than the avatar's appearance. In figure \ref{fig:forceIn1stRest} we filter out data by the first trial and note two different trends.
+
+\begin{table}[H]
+ \captionsetup{justification=centering,margin=0.1cm}
+ \begin{minipage}{.5\linewidth}
+     \centering
+\begin{tabular}{|lll|}
+\hline
+Cond & Mean & SD \\
+\hline
+1 & 17.73076 & 8.70658\\  
+2 &  17.76923 & 7.88064\\ 
+3 & 18.461538& 9.06523\\ 
+4 & 17.5& 9.06090\\  
+5 & 17.34615 &7.20523\\  
+\hline
+\end{tabular}
+\caption{Mean force and standard deviation by condition.}
+\end{minipage}\hfill
+ \begin{minipage}{.5\linewidth}
+ \centering
+\begin{tabular}{|lll|}
+\hline
+Trial & Mean & SD \\
+\hline
+1 & 17.69230 & 8.75794\\  
+2 & 18.65384 & 8.42350\\  
+3 & 17.88461 &  8.19427\\  
+4 & 17.19230 & 8.37147\\  
+5 & 17.38461 & 8.28529\\  
+\hline
+\end{tabular}
+\caption{Mean force and standard deviation by trial.}
+\end{minipage}
+\end{table} 
+
+
 \begin{figure}[H]
+\hspace{-10mm}
      \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[scale=0.4]{Files/Plots/force_mean_by_condition__gen.png}
+     \includegraphics[scale=0.4]{Files/Plots/force_mean_by_condition__gen.png}
          \caption{Mean force.}
-         \label{fig:forceMeanCondGen}
+     \label{fig:forceMeanCondGen}
      \end{subfigure}
+     \hspace{7mm}
      \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_condition_gen.png}
+     \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_condition_gen.png}
          \caption{Mean N1 force.}
-         \label{fig:forceN1MeanGen}
+     \label{fig:forceN1MeanGen}
      \end{subfigure}
+        \hspace{7mm}
       \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_condition_gen.png}
+     \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_condition_gen.png}
          \caption{Mean N2 force.}
-         \label{fig:forceN2MeanGen}
+     \label{fig:forceN2MeanGen}
      \end{subfigure}
      \caption{Mean force, N1 , N2  by condition and by gender. Lines on bars denote confidence intervals.}
-         \label{fig:forceMeanGenAll}
+     \label{fig:forceMeanGenAll}
 \end{figure} 
 
 
 \begin{figure}[H]
+\hspace{-10mm}
      \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[scale=0.4]{Files/Plots/force_mean_by_trial.png}
+         \centering         \includegraphics[scale=0.4]{Files/Plots/force_mean_by_trial.png}
          \caption{Mean force.}
-         \label{fig:forceMeanTrial}
+     \label{fig:forceMeanTrial}
      \end{subfigure}
+     \hspace{7mm}
      \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_trial.png}
+     \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_trial.png}
          \caption{Mean N1 force.}
-         \label{fig:forceN1Trial}
+     \label{fig:forceN1Trial}
      \end{subfigure}
+     \hspace{7mm}
       \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_trial.png}
+     \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_trial.png}
          \caption{Mean N2 force.}
-         \label{fig:forceN2Trial}
-     \end{subfigure}
-         \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[scale=0.4]{Files/Plots/force_mean_by_trial_gen.png}
+     \label{fig:forceN2Trial}
+     \end{subfigure} \\
+     
+     
+     \hspace{-10mm}
+     \begin{subfigure}[b]{0.3\textwidth}
+\centering
+     \includegraphics[scale=0.4]{Files/Plots/force_mean_by_trial_gen.png}
          \caption{Mean force.}
-         \label{fig:forceMeanTrialGen}
+     \label{fig:forceMeanTrialGen}
      \end{subfigure}
+    \hspace{7mm}
      \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_trial_gen.png}
+     \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_trial_gen.png}
          \caption{Mean N1 force.}
-         \label{fig:forceN1TrialGen}
+     \label{fig:forceN1TrialGen}
      \end{subfigure}
+     \hspace{7mm}
       \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_trial_gen.png}
+     \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_trial_gen.png}
          \caption{Mean N2 force.}
-         \label{fig:forceN2TrialGen}
+     \label{fig:forceN2TrialGen}
      \end{subfigure}
      \caption{Mean force, N1, N2  by trial, and by gender in the second row. Lines on bars are confidence intervals.}
-         \label{fig:allForceTrial}
+     \label{fig:allForceTrial}
 \end{figure} 
 
 \begin{figure}[H]
@@ -315,37 +376,37 @@ Male participants rated the avatars as expected, increasing in intimidation and 
      \centering
      \includegraphics[scale=0.5]{Files/Plots/force_first_gen.png}
      \caption{Mean force in first trial gendered.}
-     \label{fig:fig:meanF1stGen}
+     \label{fig:meanF1stGen}
  \end{subfigure}
   \begin{subfigure}[b]{0.5\textwidth}
      \centering
-     \includegraphics[scale=0.5]{Files/Plots/force_first_3.png}
-     \caption{Mean force in first 3 trials.}
-     \label{fig:fig:meanF3rd}
+     \includegraphics[scale=0.5]{Files/Plots/force_all_but_1.png}
+     \caption{Mean force in all trials except first one.}
+     \label{fig:meanFRest}
  \end{subfigure}
      \begin{subfigure}[b]{0.5\textwidth}
      \centering
-     \includegraphics[scale=0.5]{Files/Plots/force_first_3_gen.png}
-     \caption{Mean force in first 3 trials gendered.}
-     \label{fig:fig:meanF3rdGen}
+     \includegraphics[scale=0.5]{Files/Plots/forc_all_but_1_gen.png}
+     \vspace{-5mm}
+     \caption{Mean force in all trials except the first one  gendered.}
+     \vspace{-5mm}
+     \label{fig:meanFRestGen}
  \end{subfigure}
+ \vspace{1mm}
      \caption{Mean force by condition and by gender, taken for the first and first 3 trials. Lines on bars are confidence intervals.}
-    \label{fig:forceIn1st3rd}
+    \label{fig:forceIn1stRest}
 \end{figure}
-
+We examine our results considering only the first trial in figures  \ref{fig:meanF1st} and \ref{fig:meanF1stGen}. In figures \ref{fig:meanFRest} and \ref{fig:meanFRestGen} we look at our results from the rest of the trials, except the first one. We consider the first trial might be influenced by the novelty of experiencing VR with a physical objects, which might affect the results. On the other hand, as participants carry on with the rope-pulling the illusion that the rope is being pulled back could break. We notice there are 2 trends between these force pulls. In the first trial, womens' pull on the rope increases until the third condition, then decreases. They pull the least in condition 2, which was the avatar rated most strong and intimidating by women participants (see \ref{fig:weightedFEx}). There is only one data point for males in the average condition, which seems to be an outlier of very high force. It would explain the high value for condition 3 for all participants in figure \ref{fig:meanF1st}. Males' pull increases again for the last condition. When we consider trials 2,3,4 and 5 there is also an increase in pull for women in condition 5. The trend here seems to be that participants' force decrease until the average condition then slowly increase again.
 \begin{figure}[H]
-\hspace{-30mm}
+\hspace{-20mm}
+ \captionsetup{justification=centering,margin=0.1cm}
  \centering
- \includegraphics[scale=0.7]{Files/Plots/max_force_dif.png}
+ \includegraphics[scale=0.3]{Files/Plots/max_force_dif.png}
+ \vspace{-10mm}
  \caption{Maximum force difference per participant.}
 \label{fig:forceDif}
 \end{figure} 
-
-Max pull difference between trials at  participant 4 =26
-
-mean of maximum differences = 8.615384615384615
-
-standard dev= 4.949958288736037
+We explore the maximum differences in pulling for each participant in figure \ref{fig:forceDif}. On average, the difference was $M=8.61538, SD=4.94995$. However, there are several outliers. The maximum pull difference was for participant 4, namely 26 KG of force. With our hypothesis, we presumed there would be differences in pulling, however such large differences suggest they were not simply reacting to their opponent. Rather, some other factors seem to have influenced their pull strategies. We offer some explanations of this behavior through our qualitative feedback and observations in section \ref{qualitativeFeedback}. However, the large force variations make our measurements unreliable for some participants with a very big difference in pull. If users have different motivations for pulling stronger than simply reacting to their opponent, we cannot make a reliable case for our hypothesis.
 
  \clearpage   
 
@@ -376,12 +437,11 @@ standard dev= 4.949958288736037
 
 \clearpage
 Above in figures \ref{fig:ppullStacked} and 
-\ref{fig:challengeStacked} we present an overview of the 5-point ratings by condition. In section \ref{subsection:heatmap} we show the total ratings for each participant for perceived pull (\ref{fig:ppullHeatmap}) and challenge (\ref{fig:challengeHeatmap}).
+\ref{fig:challengeStacked} we present an overview of the 5-point ratings by condition for perceived pull and challenge (see Q3, Q4 in \ref{enum:panelQuestions}). To see the total ratings for these metrics per participants, please refer to section \ref{subsection:heatmap}, for perceived pull (\ref{fig:ppullHeatmap}) and challenge (\ref{fig:challengeHeatmap}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               CHALLENGE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    
 \begin{figure}[H]
  \begin{subfigure}[b]{0.5\textwidth}
      \centering
@@ -393,28 +453,71 @@ Above in figures \ref{fig:ppullStacked} and
      \centering
      \includegraphics[scale=0.5]{Files/Plots/challenge_by_condition_mean_gen.png}
      \caption{Mean challenge by condition gendered.}
-     \label{fig:fig:meanChalGen}
+     \label{fig:meanChalGen}
  \end{subfigure}
      \caption{Mean challenge by condition, and by gender. Lines on bars denote confidence intervals.}
     \label{fig:chalByCond}
 \end{figure}
+Most participants did give different ratings across trials, despite the rope having the same resistance ($M=2.9,\; SD=1.21265 $). In tables \ref{tabular:meanChalCond} and \ref{tabular:meanChalTrial} we display the means and standard deviation of challenge ratings by condition and trial respectively.
+Figure \ref{fig:chalByCond} shows mean challenge given by participants for each condition. In womens' case, it would appear to support our hypothesis, however women rated condition 2 as being strongest. Males had a downward trend when rating challenge. However, the confidence intervals for some condition indicate large variation. We can see in table \ref{tabular:meanChalCond} that condition 5 had the highest standard deviation.
+
+\begin{table}[H]
+ \captionsetup{justification=centering,margin=0.1cm}
+ \begin{minipage}{.5\linewidth}
+     \centering
+\begin{tabular}{|lll|}
+\hline
+Cond & Mean & SD \\
+\hline
+1 & 2.61538 & 1.23537\\  
+2 &  2.96153 & 1.18256\\ 
+3 &  2.92307 & 1.23038\\ 
+4 &  3.03846 & 1.14824\\  
+5 & 2.96153 & 1.31090\\  
+\hline
+\end{tabular}
+\caption{Mean challenge and standard deviation by condition.}
+\label{tabular:meanChalCond}
+\end{minipage}\hfill
+ \begin{minipage}{.5\linewidth}
+ \centering
+\begin{tabular}{|lll|}
+\hline
+Trial & Mean & SD \\
+\hline
+1 & 2.5 & 1.1401\\  
+2 & 2.92307 & 1.23038\\  
+3 & 3.15384 &  1.28661\\  
+4 & 2.96153 & 1.11286\\  
+5 & 2.96153 & 1.28002\\  
+\hline
+\end{tabular}
+\caption{Mean challenge and standard deviation by trial.}
+\label{tabular:meanChalTrial}
+\end{minipage}
+\label{tbl:meanChalCond1}
+\end{table} 
 
 \begin{figure}[H]
  \begin{subfigure}[b]{0.5\textwidth}
      \centering
      \includegraphics[scale=0.5]{Files/Plots/challenge_by_trial_mean.png}
      \caption{Mean challenge by trial.}
-     \label{fig:meanChal}
+     \label{fig:meanChalTrial}
  \end{subfigure}
   \begin{subfigure}[b]{0.5\textwidth}
      \centering
-     \includegraphics[scale=0.5]{Files/Plots/challenge_by_trial_mean_gen.png}
+     \includegraphics[scale=0.5]{Files/Plots/challenge_by_trial_median_gen.png}
      \caption{Mean challenge by trial gendered.}
-     \label{fig:fig:meanChalGen}
+     \label{fig:meanChalTrialGen}
  \end{subfigure}
      \caption{Mean challenge by trial, and by gender. Lines on bars denote confidence intervals.}
-    \label{fig:chalByCond}
+    \label{fig:chalByTrial}
 \end{figure}
+
+Figure \ref{fig:chalByCond} shows
+mean challenge ratings by trial. We can see the challenge increase until the second trial for males, and until the third trial for females. Results seem to vary more by trial which could indicate an effect of adaptation or accommodation. 
+We inspect the results for the first trial only in figure \ref{fig:Chal1st} below. These results seem to vary with the first condition being rated more challenging overall by males and females.
 
 \begin{figure}[H]
  \begin{subfigure}[b]{0.5\textwidth}
@@ -429,26 +532,54 @@ Above in figures \ref{fig:ppullStacked} and
      \caption{Mean challenge for 1st trial gendered.}
      \label{fig:meanChalGen1st}
  \end{subfigure}
-  \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/challenge_first_3_trials.png}
-     \caption{Mean challenge for first 3 trials.}
-     \label{fig:meanChal3rd}
- \end{subfigure}
-     \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/challenge_first_3_trials_gen.png}
-     \caption{Mean challenge for first 3 trials gendered.}
-     \label{fig:meanChalGen3rd}
- \end{subfigure}
-     \caption{Mean challenge by condition, and by gender for first and first three trials. Lines on bars denote confidence intervals.}
-    \label{fig:Chal1st3rd}
+     \caption{Mean challenge by condition, and by gender for first trial. Lines on bars denote confidence intervals.}
+    \label{fig:Chal1st}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               ppull
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    
+
+The majority of participants also reported pulling differently, despite competing at pull the strongest ($ M=3.93846,\; SD=0.82362 $). In tables \ref{tbl:meanPPullCond} and \ref{tbl:meanPPullTrial} we show the mean perceived pulls by condition and trial. Participants seemed to pull stronger in the last conditions, despite rating them less challenging. The standard deviation of their perceived pulls is also less than for the challenges. 
+
+\begin{table}[H]
+ \captionsetup{justification=centering,margin=0.1cm}
+ \begin{minipage}{.5\linewidth}
+     \centering
+\begin{tabular}{|lll|}
+\hline
+Cond & Mean & SD \\
+\hline
+1 &  3.96153 & 0.82368\\  
+2 &  3.88461 & 0.76560\\ 
+3 &  3.80769 & 0.9389\\ 
+4 &  4.0 & 0.8\\  
+5 & 4.03846 & 0.8236\\  
+\hline
+\end{tabular}
+\caption{Mean perceived pull and standard deviation by condition.}
+\label{tbl:meanPPullCond}
+\end{minipage}\hfill
+ \begin{minipage}{.5\linewidth}
+ \centering
+\begin{tabular}{|lll|}
+\hline
+Trial & Mean & SD \\
+\hline
+1 & 3.73076 & 0.82741\\  
+2 & 4.15384 & 0.6748\\  
+3 & 3.76923 &  0.99227\\  
+4 & 3.92307 & 0.7961\\  
+5 & 4.11538 &  0.76560\\  
+\hline
+\end{tabular}
+\caption{Mean perceived pull and standard deviation by trial.}
+\label{tbl:meanPPullTrial}
+\end{minipage}
+\end{table} 
+
+In figure \ref{fig:ppullByCond}, below, we show mean perceived pull values by condition and trial. By condition there seems to be a trend for the perceived pull. Namely that it seems to decrease until the average condition then increase again. This trend could support our hypothesis that participants noticed the appearances are weaker so they made increasingly less effort, and then started pulling harder when facing stronger opponents. However, as mentioned previously, women found avatar in condition 2 more strong.
+
 \begin{figure}[H]
  \begin{subfigure}[b]{0.5\textwidth}
      \centering
@@ -466,7 +597,11 @@ Above in figures \ref{fig:ppullStacked} and
     \label{fig:ppullByCond}
 \end{figure}
 
-\begin{figure}[H]
+In figure \ref{fig:ppullByTrial} we show the mean perceived pull by trial. Seems participants thought they pulled strongest in the second and last trials. They reported less perceived strength  for the first trial which could be an effect of novelty.\\
+\\
+We also look at the perceived pull in the first trial only in figure \ref{fig:PPull1st}. The results are similar with the reported challenges, however there is only one data point for males in condition 1 and 3. 
+
+ \begin{figure}[H]
  \begin{subfigure}[b]{0.5\textwidth}
      \centering
      \includegraphics[scale=0.5]{Files/Plots/ppull_by_trial_mean.png}
@@ -496,20 +631,8 @@ Above in figures \ref{fig:ppullStacked} and
      \caption{Mean ppull for 1st trial gendered.}
      \label{fig:meanPPullGen1st}
  \end{subfigure}
-  \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/ppull_first_3_trials.png}
-     \caption{Mean ppull for first 3 trials.}
-     \label{fig:meanPPull3rd}
- \end{subfigure}
-     \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/ppull_first_3_trials_gen.png}
-     \caption{Mean ppull for first 3 trials gendered.}
-     \label{fig:meanPPullGen3rd}
- \end{subfigure}
-     \caption{Mean perceived pull by condition, and by gender for first and first three trials. Lines on bars denote confidence intervals.}
-    \label{fig:PPull1st3rd}
+     \caption{Mean perceived pull by condition, and by gender for first trial. Lines on bars denote confidence intervals.}
+    \label{fig:PPull1st}
 \end{figure}
 
 
@@ -519,34 +642,50 @@ Above in figures \ref{fig:ppullStacked} and
 %               rope ownership
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Below we briefly present the results of the ratings for rope realism and ownership (see Q1, Q2 in \ref{enum:panelQuestions}). While we are partially interested in these results, they serve to confirm our qualitative feedback that participants were generally a \textit{fan} of the rope. They rated rope ownership highly 
+($M=4.63846, \; SD=0.59720$), despite noticing inaccuracies in their hands representation. The same applies to rope realism ($M=4.51538, \; SD=0.58713$), in figure \ref{fig:ropeOwnershipRealism}. In general, participants found the rope to behave as a real rope.
 
 \begin{figure}[H]
- \begin{subfigure}[b]{0.5\textwidth}
+ \begin{subfigure}[b]{0.3\textwidth}
      \centering
-     \includegraphics[scale=0.5]{Files/Plots/ropeOwnership_by_condition.png}
+     \includegraphics[scale=0.3]{Files/Plots/rocond.png}
      \caption{Mean rope ownership by condition.}
      \label{fig:ropeOwnCond}
  \end{subfigure}
-  \begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.3\textwidth}
      \centering
-     \includegraphics[scale=0.5]{Files/Plots/ropeOwnership_by_condition_gen.png}
-     \caption{Mean rope ownership by condition gendered.}
-     \label{fig:ropeOwnCondGend}
- \end{subfigure}
-  \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/ropeOwnership_by_trial.png}
+     \includegraphics[scale=0.3]{Files/Plots/rotrial.png}
      \caption{Mean rope ownership by trial.}
      \label{fig:ropeOwnTrial}
  \end{subfigure}
-     \begin{subfigure}[b]{0.5\textwidth}
+ \begin{subfigure}[b]{0.3\textwidth}
      \centering
-     \includegraphics[scale=0.5]{Files/Plots/ropeOwnership_by_trial_gen.png}
-     \caption{Mean rope ownership by trial gendered.}
-     \label{fig:ropeOwnTrialGen}
+     \includegraphics[scale=0.35]{Files/Plots/rrcond.png}
+     \caption{Mean rope realism by condition.}
+     \label{fig:ropeRealCond}
  \end{subfigure}
-     \caption{Mean rope ownership by condition, trial and by gender. Lines on bars are confidence intervals.}
-    \label{fig:ropeOwn}
+ \hspace{-5mm}
+  \begin{subfigure}[b]{0.3\textwidth}
+     \centering
+     \includegraphics[scale=0.3]{Files/Plots/rocond_gen.png}
+     \caption{Mean rope ownership by condition gendered.}
+     \label{fig:ropeOwnCondGend}
+ \end{subfigure}
+   \begin{subfigure}[b]{0.3\textwidth}
+     \centering
+     \includegraphics[scale=0.3]{Files/Plots/rotrial_gen.png}
+      \caption{Mean rope ownership by trial gendered.}
+     \label{fig:ropeOwnTrialGend}
+ \end{subfigure}
+  \hspace{5mm}
+  \begin{subfigure}[b]{0.3\textwidth}
+     \centering
+     \includegraphics[scale=0.35]{Files/Plots/rrcond_gen.png}
+     \caption{Mean rope realism by condition gendered.}
+     \label{fig:ropeRealCondGend}
+ \end{subfigure}
+     \caption{Mean rope ownership and rope realism by condition, trial, and by gender. Lines on bars are confidence intervals.}
+    \label{fig:ropeOwnershipRealism}
 \end{figure}
 
 
@@ -554,80 +693,49 @@ Above in figures \ref{fig:ppullStacked} and
 %               rope realism
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}[H]
- \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/ropeRealism_by_condition.png}
-     \caption{Mean rope realism by condition.}
-     \label{fig:ropeRealCond}
- \end{subfigure}
-  \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/ropeRealism_by_condition_gen.png}
-     \caption{Mean rope realism by condition gendered.}
-     \label{fig:ropeRealCondGend}
- \end{subfigure}
-  \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/ropeRealism_by_trial.png}
-     \caption{Mean rope realism by trial.}
-     \label{fig:ropeRealTrial}
- \end{subfigure}
-     \begin{subfigure}[b]{0.5\textwidth}
-     \centering
-     \includegraphics[scale=0.5]{Files/Plots/ropeOwnership_by_trial_gen.png}
-     \caption{Mean rope realism by trial gendered.}
-     \label{fig:ropeRealTrialGen}
- \end{subfigure}
-     \caption{Mean rope realism by condition, trial and by gender. Lines on bars are confidence intervals.}
-    \label{fig:ropeRealism}
-\end{figure}
 \clearpage
 
 \subsubsection{Post-experimental Survey Results}
 
-In the following, bar lines denotes standard deviation.
+In the following, bar lines on figures denote standard deviation.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %           misc all    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.5]{Files/Plots/gaze_plots.png}
  \caption{Percent participants gazed at objects during the whole experiment duration. }
 \label{fig:gazePie}
 \end{figure}
-
-We did not have eye tracking, however we used the midpoint of the headset to estimate what objects participants were looking at.
-
+We did not have eye tracking, however we used the midpoint of the headset to estimate what objects participants were looking at. From figure \ref{fig:gazePie} it can be seen that participants mostly gazed at their opponents. The second most gazed object is the quiz panel (\textit{QUIZZ}), which is expected as participants were answering the questions written on it.  The arms were not tagged with a separate ID due to implementation. However, the object behind the hands was logged which would most likely be the \textit{Hole} or the \textit{Ground}. This is a rough estimation, however it is supported by qualitative data, the ratings for rope realism and rope ownership, which were generally very high despite inaccuracies in arm tracking.\\ 
+\\
+In figures \ref{fig:miscAll} below, we present all mean ratings for the co-presence ($M=3.53842,\;$ $ SD=0.99604 $), presence ($M=3.51538,\; SD=0.97849 $) and arm ownership ($M=3.69871,\; SD=1.26804 $) ratings. In figures \ref{fig:miscAllFemales} and \ref{fig:miscAllMales} we show the ratings for females and males respectively. Despite feedback that avatars were not expressive enough from several participants, co-presence mean does not differ significantly from the other categories. Among them, participants varied the most rating arm ownership. In what follows we give an overview of the post-experimental survey data by question. Please see tables \ref{tbl:pres}, \ref{tbl:copres} and \ref{tbl:own} for mean, median and standard deviation values for presence, co-presence and arm ownership.
 \begin{figure}[H]
  \centering
- \includegraphics[scale=0.5]{Files/Plots/misc_all_mean.png}
- \caption{Total mean co-presence, presence and ownership ratings.}
+ \hspace{-25mm}
+ \begin{subfigure}[b]{0.3\textwidth}
+ \includegraphics[scale=0.3]{Files/Plots/misc_all_mean.png}
+ \caption{Total mean ratings.}
 \label{fig:miscAll}
-\end{figure}
-
-Co-presence   Presence       Ownership
-3.538462         3.515385       3.698718
-0.99604742    0.97849661    1.26804853
-
-
-\begin{figure}[H]
-\begin{subfigure}[b]{0.5\textwidth}
+\end{subfigure}
+ \hspace{10mm}
+\begin{subfigure}[b]{0.3\textwidth}
  \centering
- \includegraphics[scale=0.4]{Files/Plots/misc_all_mean_f.png}
+ \includegraphics[scale=0.3]{Files/Plots/misc_all_mean_f.png}
  \caption{Females mean ratings. }
  \label{fig:miscAllFemales}
  \end{subfigure}
-\begin{subfigure}[b]{0.5\textwidth}
+  \hspace{10mm}
+\begin{subfigure}[b]{0.3\textwidth}
  \centering
- \includegraphics[scale=0.4]{Files/Plots/misc_all_mean_m.png}
+ \includegraphics[scale=0.3]{Files/Plots/misc_all_mean_m.png}
  \caption{Males mean ratings.}
  \label{fig:miscAllMales}
  \end{subfigure}
  \caption{Total mean co-presence, presence and ownership ratings by gender. }
 \label{fig:miscAllGendered}
 \end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %             copresence
@@ -659,22 +767,20 @@ Co-presence   Presence       Ownership
 \label{fig:coAll}
 \end{figure}
 
-Copresence mean
-0    Q1  My opponents were intensely involved in our in...  3.461538
-1    Q2  To what extent did you feel able to assess you...  3.038462
-2    Q3  To what extent was this like you were in the s...  4.115385
-
-Std
-0    Q1  My opponents were intensely involved in our in...  0.859338
-1    Q2  To what extent did you feel able to assess you...  1.076319
-2    Q3  To what extent was this like you were in the s...  0.765607
-
-
-  index                                                  q    0
-0    Q1  My opponents were intensely involved in our in...  4.0
-1    Q2  To what extent did you feel able to assess you...  3.0
-2    Q3  To what extent was this like you were in the s...  4.0
-
+\begin{wraptable}{l}{5.5cm}
+\begin{tabular}{|llll|}
+\hline
+Q & Mean & SD & Med \\
+\hline
+1 &  3.46153 & 0.85933&4\\  
+2 &  3.03846 & 1.07631&3\\ 
+3 &  4.11538 & 0.76560&4\\ 
+\hline
+\end{tabular}
+\caption{Mean co-presence, standard deviation and median by question.}
+\label{tbl:copres}
+\end{wraptable}
+\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %             presence
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -684,7 +790,7 @@ Std
  \centering
  \includegraphics[scale=0.33]{Files/Plots/presence_mean_ratings.png}
  \caption{Total mean ratings. }
- \label{fig:presAll}
+ \label{fig:presAllMean}
  \end{subfigure}
  \hspace{10mm}
 \begin{subfigure}[b]{0.3\textwidth}
@@ -705,33 +811,24 @@ Std
 \end{figure}
 
 
-mean
 
-0    Q1  How aware were you of the real world surroundi...  2.692308
-1    Q2       How real did the virtual world seem to you?   3.384615
-2    Q3  How much did your experience in the virtual en...  3.269231
-3    Q4              I felt present in the virtual space.   4.115385
-4    Q5  In the computer generated world I had a sense ...  4.115385
+\begin{wraptable}{l}{5.5cm}
+\begin{tabular}{|llll|}
+\hline
+Q & Mean & SD & Med \\
+\hline
+1 &  2.69230 & 1.01071&3\\  
+2 &  3.38461 & 0.75243&3\\ 
+3 &  3.26923 & 1.00230&3\\ 
+4 &  4.11538 & 0.65280&4\\  
+5 &  4.11538 & 0.65280&4\\  
+\hline
+\end{tabular}
+\caption{Mean presence, standard deviation and median by question.}
+\label{tbl:pres}
+\end{wraptable} 
 
-
-Std
-  index                                                  q         0
-0    Q1  How aware were you of the real world surroundi...  1.010712
-1    Q2       How real did the virtual world seem to you?   0.752432
-2    Q3  How much did your experience in the virtual en...  1.002305
-3    Q4              I felt present in the virtual space.   0.652805
-4    Q5  In the computer generated world I had a sense ...  0.652805
-
-
-median
-  index                                                  q    0
-0    Q1  How aware were you of the real world surroundi...  3.0
-1    Q2       How real did the virtual world seem to you?   3.0
-2    Q3  How much did your experience in the virtual en...  3.0
-3    Q4              I felt present in the virtual space.   4.0
-4    Q5  In the computer generated world I had a sense ...  4.0
-
-
+\clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %             ownership
@@ -742,7 +839,7 @@ median
  \centering
  \includegraphics[scale=0.33]{Files/Plots/ownership_mean.png}
  \caption{Total mean ratings. }
- \label{fig:ownAll}
+ \label{fig:ownAllMean}
  \end{subfigure}
  \hspace{10mm}
 \begin{subfigure}[b]{0.3\textwidth}
@@ -763,40 +860,27 @@ median
 \end{figure}
 
 
-  index                                                  q         0
-0    Q1  I felt as if the virtual arm moved just like I...  3.807692
-1    Q2  I expected the virtual arm to react in the sam...  4.538462
-2    Q3  I felt that the interaction with the environme...  3.692308
-3    Q4          I felt like I controlled the virtual arm.  4.346154
-4    Q5  I felt as if the virtual arm was part of my body.  3.923077
-5    Q6   I felt as if the virtual arm was someone else’s.  1.884615
-
-
-  index                                                  q         0
-0    Q1  I felt as if the virtual arm moved just like I...  1.200641
-1    Q2  I expected the virtual arm to react in the sam...  0.508391
-2    Q3  I felt that the interaction with the environme...  0.928191
-3    Q4          I felt like I controlled the virtual arm.  0.845804
-4    Q5  I felt as if the virtual arm was part of my body.  1.016782
-5    Q6   I felt as if the virtual arm was someone else’s.  1.032547
-
-
-
-Out[51]: 
-  index                                                  q    0
-0    Q1  I felt as if the virtual arm moved just like I...  4.0
-1    Q2  I expected the virtual arm to react in the sam...  5.0
-2    Q3  I felt that the interaction with the environme...  4.0
-3    Q4          I felt like I controlled the virtual arm.  5.0
-4    Q5  I felt as if the virtual arm was part of my body.  4.0
-5    Q6   I felt as if the virtual arm was someone else’s.  2.0
-
-
+\begin{wraptable}{l}{5.5cm}
+\begin{tabular}{|llll|}
+\hline
+Q & Mean & SD & Med \\
+\hline
+1 & 3.80769 & 1.20064& 4 \\  
+2 & 4.53846 & 0.50839& 5\\  
+3 & 3.69230 &  0.92819& 4\\  
+4 & 4.34615 & 0.84580& 5\\  
+5 & 3.92307 &  1.01678&4 \\  
+6 & 1.88461 &  1.03254& 2\\  
+\hline
+\end{tabular}
+\caption{Mean arm ownership, standard deviation and median by question.}
+\label{tbl:own}
+\end{wraptable} 
 
 \clearpage
 
 \subsubsection{Post-experimental Qualitative Feedback}
-
+\label{qualitativeFeedback}
 
 
 Contrast isolated effect: If hands were too offseted for participants it decreased realism and it was more salient because the other elements in vr were seen as highly realistic - p1 
@@ -818,24 +902,3 @@ Various assumptions and reasoning for choosing answers especially for Challenge
 I can't move them so it’s very challenging
 Assumptions may change during the experiment depending on feedback of system
 
-
-
-\subsection{Discussion}
-\subsubsection{Appearance Ratings}
-The ratings for female avatars for the VR tug-of-war were inconsistent with our results from the survey. There were several downsides when designing the female agents (detailed in section \ref{section:AgentDesign}) which lead to females being perceived overall as less strong and intimidating, even in the survey. One difference between the 2 studies is that participants playing tug-of-war could see the full body of the avatar in VR as well. On the other hand, participants filling in the survey only saw their thumbnails. The resolution of the headset could also impair the ability of people seeing the avatars very clearly. One participant mentioned that she would have liked to see the females with hair. It is possible the lack of hair on females might have put off participants instead of making strength cues more salient
-
-
-\subsection{Limitations}
-- spring absorbs force a participant stretched the spring too much and it was replaced\\
-- force meter accuracy for the digital display
-- person error prone?
--resolution and realism all had same movements but varying so many things would allow less control over the independent variables research wise, it would be difficult to establish causation,//
--ppl unsure about pulling the first round and there is some effect//
-- force got maxim for whatever minimum amount of time other strategies can be used to measure with a force meter that is not digital - like the average value across all that time, the longest value for how many seconds. etc.
-- there could be some effect that people held medium values for longer idk
--challenge - what is challenging what they rated with if they rated it by looks then it is bad. MMaking it implicit and explicit has advantages and disadvantages. For example cognitive load focusing only on the pull ...\\
--change ratings allow and mention some did some not
-
-0-The downside of this is that some participants mentioned they experience cognitive load as they were trying not to move their legs during the pulls. They were focusing on that instead of focusing on pulling as hard as they can. To solve this, we can use a set up in which the ropes are tied to walling.
-
--participants misbehave pilot pilot to design the experiment against misuse
