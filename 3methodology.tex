@@ -1,26 +1,39 @@
 
 \section{Methodology}
 \label{section:methodology}
+
+\begin{figure}[H]
+  \hspace{-20mm}
+    \includegraphics[scale=1]{Files/diagram.pdf}
+    \caption{Methodology overview.}
+     \label{fig:SurveyRatedMmalesAll}
+    \end{figure}
+
+\clearpage
+The experiment has two parts: a survey and a user study. We run a survey in order to determine perceptions of strength and intimidation in avatar design. We measure perceived strength and intimidation for avatars and vary the appearance based on a weighted score of these two measures. We choose the avatars for the experiment based on the survey results. Please see section \ref{section:survey} for more details about the survey and choice of avatars.
 \subsection{Research Aims}
-The aim of the experiment is to explore Q1, namely whether the appearance of an avatar can affect task performance. We frame our research in the context of a competitive strength task between two users in virtual reality (Q2). A competitive set up allows participants to face their opponents directly and inspect their appearance in order to establish possible game strategies.
-\subsection{Hypothesis}
+The aim of our experiment is two-fold. Firstly we explore the feasibility of generating physical illusions in virtual reality (\textbf{Q1}).To do this, we implement a VR tug-of-war game and vary the appearance of participants' opponents. Our independent variable is the appearance of the opponent. Each opponent will randomly be assigned a condition of this variable, from weak-looking to strong-looking. We determine the appearance perception in a survey (see \ref{section:surveyResults}) and the number of conditions through piloting (see \ref{subsection:Piloting}).  We investigate if participants perceive any change in rope-pulling from one trial to another. We formalize our first hypothesis:
+\begin{quote}
+\textbf{H1}: \textit{Participants will perceive changes in rope-pulling force across opponents.}
+\end{quote}
+To measure any perceived changes in rope pull, we introduce a dependent variable, \textbf{challenge}. We ask participants to rate how challenging each rope-pull was after the respective trial. We do not give any indication for a standard to be applied for this rating. We leave it to the participant to interpret what \textit{challenging} means.\\ Additionally, we introduce \textbf{perceived pull} as a subjective measure of how much participants thought they pulled. We measure both variables on a 5-point Likeart scale. For each condition, we also take objective measurements of actual pull. We use a force meter to detect the maximum force each participant pulled per trial. This constitutes the the third dependent variable, \textbf{force}. We expect users to react to the appearance of their opponent and pull harder for stronger-looking opponents. We formalize the hypotheses of these variables:\\
+
+\textbf{H2}: \textit{Participants will use more force for stronger-looking opponents.}\\
+
+\textbf{H3}: \textit{Participants will report pulling harder for stronger-looking opponents.}\\
+
+\textbf{H4:}\textit{ Participants will find stronger-looking opponents more challenging.}\\
+\\
+For H2, we use the maximum pull per trial as a measure of \textit{more force}. 
+We do not make it explicit that participants are competing with an agent. We set up the rope pulling game in an ambiguous manner, such that participants do not see the pulling mechanism. Ultimately, we are interested in the feasibility of generating very implausible illusions in VR. Giving the impression that another human player is pulling the rope is one example of such an illusion that can be generated with this setup. 
+
 \subsection{Study Design}
-We investigate change of strength performance through a VR rope pulling game. Players are told they are testing a rope pulling VR game and they will be asked for pointers afterwards how to improve the game and make it more fun. 
-Each participant are told they will face several different players in VR with whom they will compete at pulling a rope. Their task is to pull the rope strong enough in order to win by pulling more than their opponent. Participants are told they are facing human players that are found at the other side of the rope in the next room, however they will be playing against programmed agents. Participants will be using VR gloves and will be holding a real life rope that corresponds to the virtual rope. Each trial will last 2 minutes and there will be a noise at the start of each trial.
-
-
-Experiment Design
-The experiment has a within subjects design varying the appearance of the opponent avatar in terms of strength (normal and strong). A possible confound is adding aggression cues to strong avatars in order to increase their perception of strength. It is unclear whether aggression or strength could elicit different responses. Adding aggression as another independent variable might help decouple any possible effect.
-
-Another issue is that participants will need to form a baseline opinion of what is a strong-looking avatar. As such, ordering might have too big an effect on the results of the experiment. Their assumption about the designs of the avatars could change. To mitigate this there are several possibilities:
-Experimenter makes comment about how avatar design turned out as inspired by previous work for the Proteus effect: a general comment about all designs “We tried to design different avatars for everyone but some ended up a bit too buff and others not so much”, a comment before each avatar: “This one ended up a bit too strong”. A downside of this approach might be an additional effect from priming the participants.
-Users can have an overview of all avatars in the beginning before they start where they see all the players and then wave at each other, after which they disappear from view and a trial with the first player begins. 
-
-A weak appearance condition can be added to further investigate performance change. Putting a weak and strong avatar next to each other will make this trait more salient and help participants establish a baseline for this condition. The avatar designs will be chosen after a short survey online investigating which avatars users think look the strongest, most aggressive. 
-
-Setting 
-To sustain the plausibility illusion, the setting must be consistent with a tug of rope situation.
-Feeling rope increases plausibility
-No dis tractors in the scene except for something between the avatars
-The illusion of a hole may increase anxiety, fear or trigger a more realistic response through increased arousal.
-
+To investigate the actual variation in force determined by the avatars, we run a user study in which participants play a tug-of-war game. The study has a within-subjects design varying the appearance of the opponent avatar in terms of strength and intimidation. We use a 5 point scale from weak to strong-looking. Our independent variable is the appearance of the opponent's avatar. We have 3 additional dependent variables, challenge, pull and force. Through mixed methods, we also measure presence in the virtual environment, co-presence with the opponents and body ownership of the participant. This design reflects the holistic approach of our research methods. We endeavour to collect quantitative objective data, subjective experiences and qualitative feedback. We believe this approach is necessary to accurately and consistently frame of our results. Having multiple perspectives allows for at least a minimal validation of our conclusions. We hope that our data will be mirrored in participants' feedback. Furthermore, qualitative data can be used to explain unexpected quantitative variations.
+\\
+We frame our research in the context of a competitive strength task between a user and a perceived agent in virtual reality. A competitive set up allows participants to face their opponents directly in a physical task. Furthermore, it constitutes a realistic interaction for a game setup.  Players are told they are testing a rope pulling VR game and they are be asked for feedback and suggestions to improve the game.
+Their task is to face several different \textit{opponents} in VR, compete at pulling a rope and win. The player is able to see their hands in the virtual environment holding the rope. They are instructed to keep their hands on the rope at all times. Since their fingers are not animated and the grip is fixed on the rope, letting go of the rope might result in breaks of presence and ownership. We do not mention the nature of the opponent as we would like to investigate what assumptions participants have. We do not make the aim of our research transparent, to avoid any possible biases, such as the observer expectancy effect or a placebo effect. 
+\\
+For the game, participants use VR gloves and hold a real, physical rope that corresponds to the virtual rope. Rope-pull time will be adjusted through piloting. The present set up is a low fidelity version of the user study. The opponents do not respond to participants' pull, and there is no force activating on the rope. We use a spring and an elastic band to give some resistance when participants pull. To maintain the appearance of realism, we use animations, game physics and sound.\\
+We pay particular attention to timing and synchronization in the design of the game. As noted in \cite{kilteni2012sense}, congruence between visuomotor actions gives rise to agency and ownership is determined by synchronized haptic and/or visual feedback. We combine and leverage these synchronicities to match the expected outcome of peoples actions. Such \textit{sorimotor contingencies} \cite{slater2009place} allows us to create a context viable for giving rise to VR physical illusions. We use spring resistance to give participants some motor sensations. After all, the rope moving towards them is something they expect to happen in a rope-pulling game. Realistic interactions that allow visual and sensorial synchronization seem to contribute to the formation of these illusions \cite{slater2009place}. The ambiguous source of the motor feedback and its magnitude is what participants will have to discern.
+\\
+Participants see a countdown accompanied by sounds for each visual element being displayed. They are told to start pulling when they see \textit{start}, and stop pulling when they see \textit{stop}. When participants start pulling, they also see their opponent pulling and feel the resistance increase on the rope as they go on. Through this flow of events we synchronize, visual, audio and haptic feedback in order to give users the impression of agency and realism. With this low fidelity set up, we explore whether participants perceived any changes in the rope pull. In a high fidelity set up, we would use motors to pull the rope to generate the illusion that another human player is pulling. 
