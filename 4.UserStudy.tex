@@ -453,7 +453,7 @@ Social comparison theory posits people judge their qualities with respect to the
 The large force variations make our measurements unreliable to support hypothesis H2. This is especially true for some participants with a very big difference in pull. If users have different motivations for pulling stronger than simply reacting to their opponent, we cannot make a reliable case for our research aims. Moreover, testing the application suggests that participants did not follow the instructions provided by the experimenter. We do not know what effect this could have on their perceived pull value, but we speculate participants could have overcompensated in cases in which they pulled much less. We believe there is a reasonable doubt to be shed over the measures for H2 and H3. We cannot and should not prevent participants from using our systems in playful and unexpected ways. This behavior is documented for other new technologies such as conversational agents \cite{jain2018evaluating}. For a question-answering system, Liao et al. document similar playful and curiosity-driven behavior. Approximately 85\% of users asked the system questions outside the scope of its advertised purpose \cite{liao2018all}. For games or VR experiences meant to give rise to VR illusions, we suggest extensive piloting in order to establish users' expectations. This would allow for more realistic interactions with the system and reduce the number of breaks in presence or plausibility.  
 
  \clearpage   
-\subsubsection{Perceived Pull and Challenge}
+\subsubsection{Perceived Pull and Challenge (H3,H4)}
 \label{subsubsection:ppullChallenge}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               CHALLENGE ppull counts
@@ -510,7 +510,7 @@ To see the total ratings for these metrics per participants, please refer to sec
     \label{fig:chalByCond}
 \end{figure}
 Most participants did give different ratings across trials, despite the rope having the same resistance ($M=2.9,\; SD=1.21265 $), which appears to support \textbf{H1}. In tables \ref{tabular:meanChalCond} and \ref{tabular:meanChalTrial} we display the means and standard deviation of challenge ratings by condition and trial respectively.
-Figure \ref{fig:chalByCond} shows mean challenge given by participants for each condition. In womens' case, it would appear to support our hypothesis, however women rated condition 2 as being strongest. Males had a downward trend when rating challenge. However, the confidence intervals for some condition indicate large variation. We can see in table \ref{tabular:meanChalCond} that condition 5 had the highest standard deviation.
+Figure \ref{fig:chalByCond} shows mean challenge given by participants for each condition. In womens' case, it would appear to support our hypothesis, however women rated condition 2 as being strongest. Males had a downward trend when rating challenge. However, the confidence intervals for some condition indicate large variation. We can see in table \ref{tabular:meanChalCond} that condition 5 had the highest standard deviation. Participants also mentioned being unsure about the feedback of the rope. The variation in the challenge rating seem to reflect participants' uncertainty. 
 
 \begin{table}[H]
  \captionsetup{justification=centering,margin=0.1cm}
@@ -690,17 +690,20 @@ We also look at the perceived pulls only for the first trial in figure \ref{fig:
 \\
 \\
 \textbf{Discussion}\\
-It seems that the results do not show support for hypotheses H3 and H4. The trends they show, however, lead us to believe that H3 and H4 should not be dismissed. Perceived pulls seem to conform the most with our hypothesis so far.
-\\
+It seems that the results do not show support for hypotheses H3 and H4. As we have highlighted throughout this section, participants behaved in unexpected ways, tested their opponents and  The trends they show, however, lead us to believe that H3 and H4 should not be dismissed. So far, perceived pulls seem to conform the most with our hypothesis.
 \\
 Our observations that the illusion seemed to break as the game went on would lead us to believe participants behaved more realistically in the first few trials. This lead us to look at the isolated results. 
 Force, perceived pull and challenge measurements do not seem to show a consistent trend. What is interesting, however, is that isolating results only for the first trial seems to paint the same picture of the data. Condition 3 seems to be the highest rated and measures, and the extremities (condition 1 and 5) show a slight increase.
 \\
-As values for perceived pull and challenge seem to increase for the last conditions, it seems less likely participants would be intimidated by the opponents into pulling less. We also suggest, based on our feedback, that the behavior of the agents was not realistic enough to determine such a response. Participants noticed their opponents did not react in sync with their pulling. Increasing realism could determine participants to respond more naturally.  However, increasing behavior realism of the  virtual humans can give rise to uncanniness if not realized in a proper way \cite{brenton2005uncanny,stein2019stay}. 
+As values for perceived pull and challenge appear to increase for the last conditions, it seems less likely participants would be intimidated by the opponents into pulling less. We also suggest, based on our feedback, that the behavior of the agents was not realistic enough to determine such a response. Participants noticed their opponents did not react in sync with their pulling. Increasing realism could determine participants to respond more naturally.  However, increasing behavior realism in virtual humans could give rise to uncanniness and provoke aversion \cite{brenton2005uncanny,stein2019stay}. 
 \\
-While \cite{fox2015avatars,pena2016see} found that opponent and avatar appearance mitigates task performance, we do not find any conclusive evidence to support our hypothesis. Since some participants changed their force pulling strategies, this inevitably must have affected their perceived pull.
-
-Slater discusses the sustaining these illusions. He mentions that sustaining the illusion might depend on its credibility and conformity to expectations. \cite{slater2009place}
+To produce VR illusions, it seems essential for users to be at the center of events and observe synchronized visual and motor cues \cite{slater2009inducing}. We designed an experience meant to provide visual and haptic synchronization. That is, when users pull the rope, they feel resistance and see the avatars tug at the rope. However, we did not account for several \textit{sensorimotor contingencies}. We may borrow this terminology to express the actions of our participants: 
+\begin{itemize}
+\itemsep0em
+\item They pulled the rope and expected the avatars to look like they are being pulled back, a result of their motor actions;
+\item They let go of the rope and expected to still feel resistance, in congruence with the visual feedback.
+\end{itemize}
+Most comments relating to the challenge ratings were centered around the fact that opponents were not reacting to users. That is, their sense of agency was being called into question. We believe that failure to provide these affordances lead to the breakdown of our illusion. Our experiment suggests that sustaining the illusion depends on its credibility and conformity to expectations \cite{slater2009place}. Indeed, breaching a fundamental assumption about the affordance of an object could place doubt on the entire context. If opponents do not pull back, then users may question the competitive nature of the game itself.
 
 \subsubsection{Rope Agency and Realism}
 \label{subsubsection:ropeOwnRealism}
@@ -708,8 +711,14 @@ Slater discusses the sustaining these illusions. He mentions that sustaining the
 %               rope ownership
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Below we briefly present the results of the ratings for rope realism and agency (see Q1, Q2 in \ref{enum:panelQuestions}). While we are partially interested in these results, they serve to confirm our qualitative feedback that participants were generally a \textit{fan} of the rope. They rated rope agency highly 
-($M=4.63846, \; SD=0.59720$), despite noticing inaccuracies in their hands representation. The same applies to rope realism ($M=4.51538, \; SD=0.58713$), in figure \ref{fig:ropeOwnershipRealism}. In general, participants found the rope to behave as a real rope.
+Below we briefly present the results of the ratings for rope realism (Q1) and agency (Q2):
+
+\itemsep0em
+\item \textbf{Q1}: I felt the virtual rope was realistic. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+\item \textbf{Q2}: It looked and felt like I was the one holding the rope. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+\end{itemize}
+These questions were mostly meant to create the impression we were evaluating a game. However, we believe these results are noteworthy as they serve to confirm our qualitative feedback that participants were generally a \textit{fan} of the rope. They rated rope agency highly 
+($M=4.63846, \; SD=0.59720$), despite noticing inaccuracies in their hands representation. The same applies to rope realism ($M=4.51538, \; SD=0.58713$), in figure \ref{fig:ropeOwnershipRealism}. In general, participants found the rope to behave as a real rope. We speculate further on body ownership and agency in the next section.
 
 \begin{figure}[H]
  \begin{subfigure}[b]{0.3\textwidth}
@@ -753,10 +762,6 @@ Below we briefly present the results of the ratings for rope realism and agency 
      \caption{Mean rope agency and rope realism by condition, trial, and by gender. Error bars show 95\%  confidence interval.}
     \label{fig:ropeOwnershipRealism}
 \end{figure}
-
-\textbf{Discussion}
-\\
-For males it suggests by the challenges they were intimidated.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               rope realism
