@@ -1,15 +1,6 @@
 
 \section{Methodology}
 \label{section:methodology}
-
-\begin{figure}[H]
-  \hspace{-20mm}
-    \includegraphics[scale=1]{Files/diagram.pdf}
-    \caption{Methodology overview.}
-     \label{fig:SurveyRatedMmalesAll}
-    \end{figure}
-
-\clearpage
 The experiment has two parts: a survey and a user study. We run a survey in order to determine perceptions of strength and intimidation in avatar design. We measure perceived strength and intimidation for avatars and vary the appearance based on a weighted score of these two measures. We choose the avatars for the experiment based on the survey results. Please see section \ref{section:survey} for more details about the survey and choice of avatars.
 \subsection{Research Aims}
 The aim of our experiment is two-fold. Firstly we explore the feasibility of generating physical illusions in virtual reality (\textbf{Q1}).To do this, we implement a VR tug-of-war game and vary the appearance of participants' opponents. Our independent variable is the appearance of the opponent. Each opponent will randomly be assigned a condition of this variable, from weak-looking to strong-looking. We determine the appearance perception in a survey (see \ref{section:surveyResults}) and the number of conditions through piloting (see \ref{subsection:Piloting}).  We investigate if participants perceive any change in rope-pulling from one trial to another. We formalize our first hypothesis:
@@ -26,6 +17,63 @@ To measure any perceived changes in rope pull, we introduce a dependent variable
 \\
 For H2, we use the maximum pull per trial as a measure of \textit{more force}. 
 We do not make it explicit that participants are competing with an agent. We set up the rope pulling game in an ambiguous manner, such that participants do not see the pulling mechanism. Ultimately, we are interested in the feasibility of generating very implausible illusions in VR. Giving the impression that another human player is pulling the rope is one example of such an illusion that can be generated with this setup. 
+\subsection{Experiment Design}
+\label{subsection:ExperimentDesign}
+To investigate whether an agents' appearance can increase people's strength, we ran a study where participants played tug-of-war with an agent opponent in VR. We elaborate on our research aims and methodology in section \ref{section:methodology}. We had a gender-matched, within-group experimental design for the user study. We independently vary the agent's appearance on a 5-point scale from weak-looking to strong-looking. Participants played five trials of rope-pulling with the five avatars chosen from the survey. The avatars were meant to display various degrees of strength and intimidation, compounded in a final weighted score. We chose the weakest and strongest male and female avatars. For the remaining three, we chose avatars in a low-average, average and high-average strength condition. Further details about the avatars chosen for the experiment are presented in section \ref{section:surveyResults}. For each trial, we measure the maximum pull force in kilograms for each participant, which constitutes our dependent numeric variable. We further measure perceived pull and perceived challenge on a 5-point Likert scale, with constitute our two ordinal dependent variables.\\
+Participants completed a post-experimental survey, gave feedback for each rope-pulling trial in-game and had a short chat with the experimenter at the end. All subjective questions were answered on a 5-point Likert scale.\\
+
+Between each rope-pull, participants rated four statements about the previous round on a 5-point Likert scale. They were presented with a panel of these questions in VR, and were asked to read the questions out-loud and give their answer to the experimenter. These questions are the following:
+\begin{itemize}
+\label{enum:panelQuestions}
+\itemsep0em
+\item \textbf{Q1}: I felt the virtual rope was realistic. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+\item \textbf{Q2}: It looked and felt like I was the one holding the rope. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+ \item \textbf{Q3}: How much did you pull the rope? Rating: 1 (\textit{Not at all}), to 5 (\textit{Very much});
+\item \textbf{Q3}: How challenging was this round? Rating: 1 (\textit{Not at all}), to 5 (\textit{Very challenging}).
+\end{itemize}
+Q1 refers to rope realism, Q2 captures rope agency, Q3 refers to perceived pull and Q4 refers to challenge. We will use these terms to refer to the categories of these questions in the results section. Q3 and Q4 are two dependent variables. We present results of Q1 and Q2, however their main purpose was to give participants the impression we are evaluating rope performance.\\
+\\
+For the post-experimental survey, we measured participants' subjective experience on three levels: body ownership, presence and co-presence measures. 
+To measure presence, we retained 5 items from the igroup presence questionnaire (IPQ): \footnote{http://www.igroup.org/pq/ipq/index.php}
+\begin{itemize}
+\label{enum:presenceQuestions}
+\itemsep0em
+    \item \textbf{Q1}: How aware were you of the real world surrounding while navigating in the virtual world? (i.e. sounds, room temperature, other people, etc.)? Rating: 1 (\textit{Not aware at all}), to 5 (\textit{Extremely aware});
+    \item \textbf{Q2}: How real did the virtual world seem to you? Rating: 1 (\textit{Not real at all}) to 5 (\textit{Completely real});
+    \item \textbf{Q3}: How much did your experience in the virtual environment seem consistent with your real-world experience ?  Rating: 1 (\textit{Not consistent}) to 5 (\textit{Very consistent});
+    \item \textbf{Q4}: I felt present in the virtual space. Rating: 1 (\textit{Fully disagree}) to 5 (\textit{Fully agree});
+    \item \textbf{Q5}: In the computer generated world I had a sense of ``being there''.  Rating: 1 (\textit{Not at all}) to 5 (\textit{Very much}). 
+\end{itemize}
+The IPQ questionnaire measures presence on three levels: spacial presence, involvement and experienced realism. From our retained questions, Q1 refers to involvement, Q2 and Q3 capture realism, Q4 spacial presence and Q5 refers to general presence.
+\\
+The survey items for body ownership were taken from \cite{argelaguet2016role}. For our study, we replaced the term \textit{hand} with \textit{arm}, and changed the 7-point rating scale to a 5-point one. The following questions were retained:
+\begin{itemize}
+\label{enum:ownershipQuestions}
+\itemsep0em
+    \item \textbf{Q1}: I felt as if the virtual arm moved just like I wanted it to, as if it was obeying my will. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+    \item \textbf{Q2}: I expected the virtual arm to react in the same way as my own arm. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+    \item \textbf{Q3}: I felt that the interaction with the environment was realistic. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+    \item \textbf{Q4}: I felt like I controlled the virtual arm. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+    \item \textbf{Q5}: I felt as if the virtual arm was part of my body. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+    \item \textbf{Q6}: I felt as if the virtual arm was someone else’s. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree}).
+\end{itemize}
+With respect to co-presence/social presence, we retained three questions from \cite{nowak2003effect}, changed their scale to a 5-point one and replaced the term \textit{interaction partner} with \textit{opponents}. They questions are:
+\begin{itemize}
+\label{enum:copresenceQuestions}
+\itemsep0em
+    \item \textbf{Q1}: My opponents were intensely involved in our interaction. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
+    \item \textbf{Q2}: To what extent did you feel able to assess your opponents’ reactions?. Rating: 1 (\textit{I was unable}), to 5 (\textit{Their reactions were clear});
+    \item \textbf{Q3}: To what extent was this like you were in the same room with your opponents? Rating: 1 (\textit{Did not feel in the same room}), to 5 (\textit{Felt completely in the same room}).
+\end{itemize}
+Additionally, the participants had to rate the appearance of the avatars on the same scale as in the initial appearance survey. We did this in order to verify our assumptions with respect to the hypothesis, that the opponents users faced were indeed perceived as strong/intimidating. These questions were in the final part of the post-experimental survey:
+\begin{enumerate}
+\itemsep0em 
+\item This avatar looks attractive.
+\item This avatar looks strong.
+\item This avatar looks intelligent.
+\item This avatar looks intimidating.
+\end{enumerate}
+The avatars were randomized for each participant at the start of the experiment. This study was ran alongside another study by researchers within the department. We made a common call for participants to take part in a \textit{VR Games Study}. Their task was to assess to virtual reality games and give researchers feedback about their experience. The two games were Tug-of-war VR and Whack-a-mole VR. At the end of the experiment, participants had a short recorded chat with the experimenter. Participants were asked to give feedback for the games and, in addition, we checked their awareness about the true purpose of the experiment.
 
 \subsection{Study Design}
 To investigate the actual variation in force determined by the avatars, we run a user study in which participants play a tug-of-war game. The study has a within-subjects design varying the appearance of the opponent avatar in terms of strength and intimidation. We use a 5 point scale from weak to strong-looking. Our independent variable is the appearance of the opponent's avatar. We have 3 additional dependent variables, challenge, pull and force. Through mixed methods, we also measure presence in the virtual environment, co-presence with the opponents and body ownership of the participant. This design reflects the holistic approach of our research methods. We endeavour to collect quantitative objective data, subjective experiences and qualitative feedback. We believe this approach is necessary to accurately and consistently frame of our results. Having multiple perspectives allows for at least a minimal validation of our conclusions. We hope that our data will be mirrored in participants' feedback. Furthermore, qualitative data can be used to explain unexpected quantitative variations.

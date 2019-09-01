@@ -1,5 +1,4 @@
-
-\section{Implementation}
+\subsection{Implementation}
 \label{section:implementation}
 \todo{did i add stop sounds and countdown images?}
 The tug-of-war game was implemented in Unity3D and integrated with VR through SteamVR. Auditory feedback was provided for the countdown before the rope-pulling in order to increase the appearance of a gaming situation. Sounds were provided from the laptop speakers which was located behind the black curtains. 
@@ -51,24 +50,24 @@ We designed the experiment scene to be as close as possible to room where the ex
 Every second the state of the experiment is logged in a file. Please see Appendix subsection 11.1 for a detailed explanation of what is logged. Among others, we log users' the gaze target. This is implemented with a Raycast \footnote{https://docs.unity3d.com/ScriptReference/Physics.Raycast.html} originating at the center of the headset. Gaze targets are detected as objects with colliders. Since UMA's and some special parts of the setting (such as the hole) cannot have coliders, we added transparent panels with colliders on top of these objects.
 
 
-\section{Agent Design}
+\subsubsection{Agent Design}
 \label{section:AgentDesign}
 
 The virtual agents were created in Unity using the Unity Multipurpose Avatar 2 (UMA) asset \footnote{https://assetstore.unity.com/packages/3d/characters/uma-2-unity-multipurpose-avatar-35611} and o3n UMA Races \footnote{https://assetstore.unity.com/packages/3d/characters/humanoids/o3n-male-and-female-uma-races-102187}. We chose this library because the UMA character system has a high degree of avatar customization allowing avatar generation with relative ease. Programmers are able to vary body part sizes and, among many others, ear and brow rotations. 
 
 The manipulations described below serve to provide users with a more dynamic experience and make their opponents appear more life-like. We aim to create high behavior realism in order to make up for the lack of perceived agency. This serves the purpose of eliciting more realistic responses from people in accordance with the threshold model of social influence \cite{blascovich2002theoretical}. We place UMAs close enough to participants so they notice the changes in expression and other animation changes.
 
-\subsection{UMA Dna}
+\subsubsection{UMA Dna}
 We varied perceived strength in the design of the agents and used UMA DNA settings to to generate a distribution of agents varying from strong looking to average and weak looking. UMA Dna represents a dictionary used to customize Unity multipurpose avatars (UMAs). Appearance can be changed on a scale of 0 to 1, with higher values being used to make adjustments more salient. A downside of this character system is that the magnitude of these features does not vary linearly and can differ between races and genders. For example, female muscle size cannot be increased on the same scale as male muscle size. Due to this, male agents have higher perceived strength. This can also be observed in the results of our survey in the next chapter. Another example is that increasing lower muscle mass for women inflated the leg muscles in an unnatural way. Furthermore, there were color differences due to mesh materials and texture. 
 
 UMAs in the strong conditions generally had strength-signaling Dna parts closer to 1. Their values decreased to 0.5 for agents in the normal conditions and below 0.5 for agents in the weak condition. We considered the default 0.5 Dna values as average. We manually adjusted these values through trial and error to give UMAs the most human-like appearance and prevent them from looking exceedingly uncanny.    
-\subsection{Strength Cues}
+\subsubsection{Strength Cues}
 As strength cues we used muscle tone and fitness, together with adjusted facial proportion as seen in \cite{windhager2011geometric}. Skin, eye and hair color, together with outfit designs were kept as constant as possible between races and genders. For the upper body clothing, the agents had a sleeveless shirt to increase the visibility of the arm muscles. 
 With respect to facial manipulations, we varied facial width and jaw size which are known to be associated with testosterone in men \cite{lefevre2013telling}. We decreased the size of the lips and eyes in the strong conditions to increase face-width ratio. While height and age are the best predictors for female perceived strength \cite{sell2008human}, we applied the same variations to the female avatars. We do not adjust height for the agents displayed in the survey images, however we manipulate height in the actual experiment, increasing height for agents in the strong condition.  
 
 As strength is closely related to dominance and aggression, we added variables meant to increase intimidation such as tattoos, military hairstyles and manipulated outfit colors. As in previous Proteus effect literature and associated body of work related to social psychology \cite{yee2009proteus,pena2009priming}, we used black clothing to elicit more aggressive attitude perceptions. Agents in strong conditions had black upper-body clothing, those in medium conditions had gray and for weak agents we used white. While male tattoos are dominantly viewed, female tattoos generate mixed responses from observers \cite{wohlrab2009perception}. As with previous research \cite{van2013proteus}, agents were gender matched to avoid any tensions or similarity biases that would arise from cross-gendered evaluations. Please see Appendix B for the agent settings and pictures chosen for the surveys, and the final settings chosen in the experiment. \todo{add references here}.
 
-\subsection{Animations}
+\subsubsection{Animations}
 \label{subsection:animation}
  In addition, we use the UMA Expression Player to even out neutral facial expressions between races and genders. Please refer to appendix X for the neutral expression settings.\todo{ add settings}. The Expression Player was also used at the moment the UMAs were pulling the rope to give the impression that the opponents were exerting themselves or seemed angry. Their facial expressions were exaggerated to be more visible to participants in VR. Additionally, we use the blinking mechanism provided by the UMA Expression Player to make the avatars blink throughout the trials. We interpolate\footnote{https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html} between the changes in facial expression in order to blend them in a natural way.
  

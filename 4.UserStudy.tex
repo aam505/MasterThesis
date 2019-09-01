@@ -1,8 +1,6 @@
-
-\section{User Study}
+\subsection{Initial Design}
 \label{subsection:initDesign}
 Before starting the experiment we had a series of pilots to determine rope-pull quality, force measuring feasibility and opponent realism. We also collected feedback about rope-pulling duration and animation styles.
-\subsection{Initial Design}
 For the piloting, we had a gender-matched, within-group experimental design. Initially, the game consisted of three of rope-pulls with questions in-between. We had the same technical set up as mentioned in section \ref{subsection:SetupMeasurements}. The rope was tied to a box with a force meter and some elastic bands were placed between them to give the impression of resistance. The box was set on a table to prevent damage to the force meter from being dropped. This would additionally prevent participants from feeling a weight on the box between rope-pulls. The VR room was made as similar as possible to the experiment room. There were two rounds of piloting. For this, we recruited participants from the university campus. Each round resulted in several modifications to the original design of the experiment and implementation of the game. We detail these changes below.
 \subsection{Piloting}
 \label{subsection:Piloting}
@@ -26,66 +24,6 @@ Other miscellaneous set up decisions were taken:
     \item We relocated the base stations and placed them higher, as we noticed taller participants would get between them and cause loss tracking issues;
     \item We placed papers with directions to the experiment room around the experiment location.
 \end{itemize}
-\subsection{Experimenter Instructions}
-Throughout the piloting sessions, many of the difficulties of running this study were revealed. The most challenging task would be synchronizing data capturing with starting the game and giving all necessary information to participants. If VR set up errors occurred, such as base station loss of sync or tracker issues, the experimenter would need to ad-lib until starting data capturing, resume experimental procedure and repeat important instructions. We incorporate all this knowledge in an \textit{Instruction Sheet} the experimenter must follow to give participants the same experience of the study. This sheet can be seen in section \ref{subsection:instructionSheet}. Additionally, participants were required to sign a consent form (presented in section \ref{subsection:consentForm}) which broadly described the experimental setup, method and purpose. In it, we ask for their consent to store recordings and other experimental data in an anonymized form. Both forms were modified from their initial structure as a result of piloting. The purpose of evaluating strength of pull based on avatar appearance was not mentioned in the consent form. Instead, broader terms such as \textit{virtual reality interactions} were used.
-
-\subsection{Experiment Design}
-\label{subsection:ExperimentDesign}
-To investigate whether an agents' appearance can increase people's strength, we ran a study where participants played tug-of-war with an agent opponent in VR. We elaborate on our research aims and methodology in section \ref{section:methodology}. We had a gender-matched, within-group experimental design for the user study. We independently vary the agent's appearance on a 5-point scale from weak-looking to strong-looking. Participants played five trials of rope-pulling with the five avatars chosen from the survey. The avatars were meant to display various degrees of strength and intimidation, compounded in a final weighted score. We chose the weakest and strongest male and female avatars. For the remaining three, we chose avatars in a low-average, average and high-average strength condition. Further details about the avatars chosen for the experiment are presented in section \ref{section:surveyResults}. For each trial, we measure the maximum pull force in kilograms for each participant, which constitutes our dependent numeric variable. We further measure perceived pull and perceived challenge on a 5-point Likert scale, with constitute our two ordinal dependent variables.\\
-Participants completed a post-experimental survey, gave feedback for each rope-pulling trial in-game and had a short chat with the experimenter at the end. All subjective questions were answered on a 5-point Likert scale.\\
-
-Between each rope-pull, participants rated four statements about the previous round on a 5-point Likert scale. They were presented with a panel of these questions in VR, and were asked to read the questions out-loud and give their answer to the experimenter. These questions are the following:
-\begin{itemize}
-\label{enum:panelQuestions}
-\itemsep0em
-\item \textbf{Q1}: I felt the virtual rope was realistic. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
-\item \textbf{Q2}: It looked and felt like I was the one holding the rope. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
- \item \textbf{Q3}: How much did you pull the rope? Rating: 1 (\textit{Not at all}), to 5 (\textit{Very much});
-\item \textbf{Q3}: How challenging was this round? Rating: 1 (\textit{Not at all}), to 5 (\textit{Very challenging}).
-\end{itemize}
-Q1 refers to rope realism, Q2 captures rope agency, Q3 refers to perceived pull and Q4 refers to challenge. We will use these terms to refer to the categories of these questions in the results section. Q3 and Q4 are two dependent variables. We present results of Q1 and Q2, however their main purpose was to give participants the impression we are evaluating rope performance.\\
-\\
-For the post-experimental survey, we measured participants' subjective experience on three levels: body ownership, presence and co-presence measures. 
-To measure presence, we retained 5 items from the igroup presence questionnaire (IPQ): \footnote{http://www.igroup.org/pq/ipq/index.php}
-\begin{itemize}
-\label{enum:presenceQuestions}
-\itemsep0em
-    \item \textbf{Q1}: How aware were you of the real world surrounding while navigating in the virtual world? (i.e. sounds, room temperature, other people, etc.)? Rating: 1 (\textit{Not aware at all}), to 5 (\textit{Extremely aware});
-    \item \textbf{Q2}: How real did the virtual world seem to you? Rating: 1 (\textit{Not real at all}) to 5 (\textit{Completely real});
-    \item \textbf{Q3}: How much did your experience in the virtual environment seem consistent with your real-world experience ?  Rating: 1 (\textit{Not consistent}) to 5 (\textit{Very consistent});
-    \item \textbf{Q4}: I felt present in the virtual space. Rating: 1 (\textit{Fully disagree}) to 5 (\textit{Fully agree});
-    \item \textbf{Q5}: In the computer generated world I had a sense of ``being there''.  Rating: 1 (\textit{Not at all}) to 5 (\textit{Very much}). 
-\end{itemize}
-The IPQ questionnaire measures presence on three levels: spacial presence, involvement and experienced realism. From our retained questions, Q1 refers to involvement, Q2 and Q3 capture realism, Q4 spacial presence and Q5 refers to general presence.
-\\
-The survey items for body ownership were taken from \cite{argelaguet2016role}. For our study, we replaced the term \textit{hand} with \textit{arm}, and changed the 7-point rating scale to a 5-point one. The following questions were retained:
-\begin{itemize}
-\label{enum:ownershipQuestions}
-\itemsep0em
-    \item \textbf{Q1}: I felt as if the virtual arm moved just like I wanted it to, as if it was obeying my will. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
-    \item \textbf{Q2}: I expected the virtual arm to react in the same way as my own arm. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
-    \item \textbf{Q3}: I felt that the interaction with the environment was realistic. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
-    \item \textbf{Q4}: I felt like I controlled the virtual arm. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
-    \item \textbf{Q5}: I felt as if the virtual arm was part of my body. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
-    \item \textbf{Q6}: I felt as if the virtual arm was someone else’s. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree}).
-\end{itemize}
-With respect to co-presence/social presence, we retained three questions from \cite{nowak2003effect}, changed their scale to a 5-point one and replaced the term \textit{interaction partner} with \textit{opponents}. They questions are:
-\begin{itemize}
-\label{enum:copresenceQuestions}
-\itemsep0em
-    \item \textbf{Q1}: My opponents were intensely involved in our interaction. Rating: 1 (\textit{Fully disagree}), to 5 (\textit{Fully agree});
-    \item \textbf{Q2}: To what extent did you feel able to assess your opponents’ reactions?. Rating: 1 (\textit{I was unable}), to 5 (\textit{Their reactions were clear});
-    \item \textbf{Q3}: To what extent was this like you were in the same room with your opponents? Rating: 1 (\textit{Did not feel in the same room}), to 5 (\textit{Felt completely in the same room}).
-\end{itemize}
-Additionally, the participants had to rate the appearance of the avatars on the same scale as in the initial appearance survey. We did this in order to verify our assumptions with respect to the hypothesis, that the opponents users faced were indeed perceived as strong/intimidating. These questions were in the final part of the post-experimental survey:
-\begin{enumerate}
-\itemsep0em 
-\item This avatar looks attractive.
-\item This avatar looks strong.
-\item This avatar looks intelligent.
-\item This avatar looks intimidating.
-\end{enumerate}
-The avatars were randomized for each participant at the start of the experiment. This study was ran alongside another study by researchers within the department. We made a common call for participants to take part in a \textit{VR Games Study}. Their task was to assess to virtual reality games and give researchers feedback about their experience. The two games were Tug-of-war VR and Whack-a-mole VR. At the end of the experiment, participants had a short recorded chat with the experimenter. Participants were asked to give feedback for the games and, in addition, we checked their awareness about the true purpose of the experiment.
 
 \subsection{Setup and Measurements}
 \label{subsection:SetupMeasurements}
@@ -132,6 +70,10 @@ We greeted participants and briefly explained the broad purpose of the study. Af
 \\
 Before starting the game, we calibrated the gloves for participants' hands. For each rope-pulling trial, participants were told to start pulling after the end of the countdown, when they they see \textit{Start}, and keep pulling until they see \textit{Stop}. They also received audio feedback for the countdown. Participants were told to follow two constraints: always keep their hands on the rope and try pulling the rope without moving their legs. Between rope-pulls, participants answered the questions on the quiz panel (figure \ref{fig:VRPanel}) from within the VE. After 5 rope-pulls, the game ends and participants are asked to fill in the post-experimental survey. The survey questions of the avatar appearances were gender-matched. Before participants left, we collected feedback about the game and then debriefed users about the true scope of the study.\\
 For each trial, users pulled the rope for 10 seconds. Before that, they were in the VE with their opponent for 20 seconds. After the pulling ended, they remained in the same VR state for an additional 10 seconds. During this time, users could inspect the appearance of the avatars. Only after that, participants were shown the quiz panel. Transition between the game states (rope-pulling and quiz panel) was realized through a black splash screen. When the screen faded to black, the objects in the room changed. The screen fades back when the changes are complete. We did this in order to maintain a natural state of the room and prevent breaks in presence and immersion. Further details about the implementation are presented in section \ref{section:implementation}.\\
+\\ %there was experimenter instructions here
+Throughout the piloting sessions, many of the difficulties of running this study were revealed. The most challenging task would be synchronizing data capturing with starting the game and giving all necessary information to participants. If VR set up errors occurred, such as base station loss of sync or tracker issues, the experimenter would need to ad-lib until starting data capturing, resume experimental procedure and repeat important instructions. We incorporate all this knowledge in an \textit{Instruction Sheet} the experimenter must follow to give participants the same experience of the study. This sheet can be seen in section \ref{subsection:instructionSheet}. Additionally, participants were required to sign a consent form (presented in section \ref{subsection:consentForm}) which broadly described the experimental setup, method and purpose. In it, we ask for their consent to store recordings and other experimental data in an anonymized form. Both forms were modified from their initial structure as a result of piloting. The purpose of evaluating strength of pull based on avatar appearance was not mentioned in the consent form. Instead, broader terms such as \textit{virtual reality interactions} were used.
+
+
 \subsection{Participants}
 \label{subsection:participantsExperiment}
 In order to give the appearance of a gaming study, we designed a poster to recruit people for the experiment. We placed this poster (\ref{subsection:poster}) around the university campus and  used it for recruiting messages. For the user study, we recruited a total of 28 participants (17 female) from the university campus and local Facebook groups. They were between 21 and 34 years old $(M = 24.42, SD = 3.06)$. Participants were unable to take part in the study if they previously completed the avatar appearance survey. We discarded the results of 2 participants (1 female) due to invalid data. Of the remaining ones, 9 participants had never used VR before and 16 had never played real-life tug-of-war. Participants were rewarded with a gift valued at 100 danish krone for taking part in the whole study.
@@ -151,7 +93,7 @@ In order to give the appearance of a gaming study, we designed a poster to recru
      \caption{Participants playing tug-of-war VR  .}
      \label{fig:participants}
 \end{figure}
-\subsection{Results and Discussion}
+\section{Results}
 The results were manually logged by the experimenter. To measure the maximum force, we looked at the force meter data from the end of the countdown, at the beginning of the \textit{Start} message, until the end of the \textit{Stop} message. All force data presented is measured in kilograms. In the plots below, we present data in terms of ordering and condition. By ordering, we mean the order in which participants saw the appearances, labeled as \textit{Trial}. By condition we mean the condition of the opponent participants faced, labeled as \textit{Condition}. Trial 1 refers to the first trial of rope-pulling participants performed, out of a total of five. Trial 2 refers to the second one and so on. The condition captures the independent variable and represents a numerical mapping from 1 to 5 to the appearance variable, increasing by strength/intimidation. Condition 1 refers to the weakest-looking chosen avatars according to the weighted score (see \ref{fig:SurveyRatedFemalesChosen},\ref{fig:SurveyRatedMalesChosen}) and condition 5 refers to the strongest looking avatars. We also display our results by gender. \\
 Considering the large amount of information presented, we structure the results section as follows:
 \begin{enumerate}
@@ -242,28 +184,28 @@ Moreover, other participants  seemed to be affected by the novelty of the experi
      \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Files/Plots/forceNforce_by_cond_swarm.png}
-         \caption{All N1 by condition. }
+         \caption{All $N_{first}$ by condition. }
          \label{fig:allN1NCond}
      \end{subfigure}
      \hspace*{\fill}
      \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Files/Plots/forceNforce_mean_by_condition.png}
-         \caption{Mean of N1  by condition. }
+         \caption{Mean of $N_{first}$ by condition. }
          \label{fig:meanN1Cond}
      \end{subfigure} 
      \hspace*{\fill}
          \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Files/Plots/forceNormalized_by_cond_swarm.png}
-         \caption{All N2 by condition.}
+         \caption{All $N_{max}^{min}$ by condition.}
          \label{fig:allN2Norm}
      \end{subfigure}
 \hspace*{\fill}
      \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Files/Plots/forceNormalized_mean_by_condition.png}
-         \caption{Mean of N2 by condition.}
+         \caption{Mean of $N_{max}^{min}$ by condition.}
          \label{fig:meanN2Cond}
      \end{subfigure} 
       \caption{All force (kg) values by condition. Error bars show 95\%  confidence interval.}
@@ -272,13 +214,8 @@ Moreover, other participants  seemed to be affected by the novelty of the experi
  Despite positive qualitative feedback, there were inconsistencies in how strong participants pulled. We expected some variability because users interacted with the system in unforeseen ways. These quantitative results, however, do not appear to support H2.\\
  \\
 \textbf{Results}\\
-In the above figures we show an overview of all the data measured from the force meter, namely the maximum force pulled for each trial (kg). We normalize this data in two ways, N1 and N2. In the case of N1, for each participant we subtract from all trials the value in the first trial. For N2, we normalize values between 0 and 1 with min-max normalization. We take the minimum and maximum for each participant from all their respective trials. The normalization formulas are as follows: 
-\[ N1_i^p=X_i^p-X_1^p, i \in \{1,2,3,4,5\},\; i \; trial \; number,\; p \in PIDS \]
-\[N1= \{ N1_i^p |  i \in \{1,2,3,4,5\},\; i \; trial \; number,\; p \in PIDS \}  \]
+In the above figures we show an overview of all the data measured from the force meter, namely the maximum force pulled for each trial (kg). For each participant, we normalize this data in two ways, $N_{first}$ and $N_{max}^{min}$. $N_{first}$ shows the relative force to the first trial. For $N_{max}^{min}$, we normalize values between 0 and 1 with min-max normalization.
 
-\[ N2_i^p=\frac{X_i^p-X_{min}^p}{x_{max}^p-x_{min}^p} , i \in \{1,2,3,4,5\},\; i \; trial \; number,\; p \in PIDS\]
-
-\[N2= \{ N2_i^p |  i \in \{1,2,3,4,5\},\; i \; trial \; number,\; p \in PIDS \}  \]
 The force meter measurements do not seem to support our hypothesis, that the stronger avatar looks the harder people would pull (H2). The differences between trials are not very significant and the error bars vary. The data shows participants pulled slightly more in the third condition (average). In the tables below we present mean and standard deviation per trial and condition. For all force data we have: $M= 17.76153, \; SD=8.29289$.
 From the tables below, there appears to be more variation by condition than by trial. Also, participants seemed to pull the strongest in the second trial and for condition 3 (average-looking).
 
@@ -329,17 +266,17 @@ Trial & Mean & SD \\
      \begin{subfigure}[b]{0.3\textwidth}
          \centering
      \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_condition_gen.png}
-         \caption{Mean N1 force.}
+         \caption{Mean $N_{first}$ force.}
      \label{fig:forceN1MeanGen}
      \end{subfigure}
         \hspace{7mm}
       \begin{subfigure}[b]{0.3\textwidth}
          \centering
      \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_condition_gen.png}
-         \caption{Mean N2 force.}
+         \caption{Mean $N_{max}^{min}$ force.}
      \label{fig:forceN2MeanGen}
      \end{subfigure}
-     \caption{Mean force, N1 , N2  by condition and by gender. Lines on bars denote confidence intervals.}
+     \caption{Mean force, $N_{first}$ , $N_{max}^{min}$  by condition and by gender. Lines on bars denote confidence intervals.}
      \label{fig:forceMeanGenAll}
 \end{figure} 
 \begin{figure}[H]
@@ -353,14 +290,14 @@ Trial & Mean & SD \\
      \begin{subfigure}[b]{0.3\textwidth}
          \centering
      \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_trial.png}
-         \caption{Mean N1 force.}
+         \caption{Mean $N_{first}$ force.}
      \label{fig:forceN1Trial}
      \end{subfigure}
      \hspace{7mm}
       \begin{subfigure}[b]{0.3\textwidth}
          \centering
      \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_trial.png}
-         \caption{Mean N2 force.}
+         \caption{Mean $N_{max}^{min}$ force.}
      \label{fig:forceN2Trial}
      \end{subfigure} \\
      
@@ -375,20 +312,20 @@ Trial & Mean & SD \\
      \begin{subfigure}[b]{0.3\textwidth}
          \centering
      \includegraphics[scale=0.4]{Files/Plots/forceNforce_mean_by_trial_gen.png}
-         \caption{Mean N1 force.}
+         \caption{Mean $N_{first}$ force.}
      \label{fig:forceN1TrialGen}
      \end{subfigure}
      \hspace{7mm}
       \begin{subfigure}[b]{0.3\textwidth}
          \centering
      \includegraphics[scale=0.4]{Files/Plots/forceNormalized_mean_by_trial_gen.png}
-         \caption{Mean N2 force.}
+         \caption{Mean $N_{max}^{min}$ force.}
      \label{fig:forceN2TrialGen}
      \end{subfigure}
-     \caption{Mean force, N1, N2  by trial, and by gender in the second row. Error bars show 95\%  confidence interval.}
+     \caption{Mean force, $N_{first}$, $N_{max}^{min}$  by trial, and by gender in the second row. Error bars show 95\%  confidence interval.}
      \label{fig:allForceTrial}
 \end{figure} 
-From figures displayed in \ref{fig:forceMeanGenAll} we can see males pulled more than females. Additionally, the error bars seem to be overall bigger for males than females. Error bars are biggest for N2 due to the normalization procedure, as minimum values are considered 0 and maximum values 1. Male participants seem to have the biggest error bars in condition 4.
+From figures displayed in \ref{fig:forceMeanGenAll} we can see males pulled more than females. Additionally, the error bars seem to be overall bigger for males than females. Error bars are biggest for $N_{max}^{min}$ due to the normalization procedure, as minimum values are considered 0 and maximum values 1. Male participants seem to have the biggest error bars in condition 4.
 \\
 In figure \ref{fig:allForceTrial} we display our results by trial. Both males and females seemed to have pulled harder in the second trial. We look at the distributions of avatars per trial in order to determine if the effect is due to order or representation. Figure \ref{fig:condPerTrial} shows that in the third trial there were the most avatars in condition 3. The high pulling values would, therefore, more likely occur because of condition than trial order, as participants seemed to pull hardest for the average condition.
 \\
@@ -440,7 +377,7 @@ Participants did not appear to use force in accordance with our hypotheses (H2).
 We explore the maximum differences in pulling for each participant in figure \ref{fig:forceDif}. On average, the difference was: $M=8.61538, SD=4.94995$. However, there are several outliers. The maximum pull difference was for participant 4 --- 26 kg of force. With our hypothesis, we presumed there would be differences in pulling, however such large differences suggest participants were not simply reacting to their opponent. Rather, some other factors seem to have influenced their pull strategies. Qualitative feedback offers some insight into this behavior. These large variations support our observations that participants tested the application. They behaved in an unexpected way in order to test their own assumptions about the opponents, not always respecting the instructions of the experimenter.\\
 \\
 \textbf{Discussion}\\
- From qualitative feedback we also noticed that, as participants carry on with the rope-pulling, the illusion that the rope is being pulled eventually breaks. This suggests there might be a trend of lower force across trials. Figure \ref{fig:allForceTrial} shows some indication of a downwards trend for mean force and N2. Another explanation could be that participants simply felt tired and pulled less. A correlation between performance and realism should be explored in future research. Keeping the number of trials at a minimum to avoid fatigue should be considered a priority. 
+ From qualitative feedback we also noticed that, as participants carry on with the rope-pulling, the illusion that the rope is being pulled eventually breaks. This suggests there might be a trend of lower force across trials. Figure \ref{fig:allForceTrial} shows some indication of a downwards trend for mean force and $N_{max}^{min}$. Another explanation could be that participants simply felt tired and pulled less. A correlation between performance and realism should be explored in future research. Keeping the number of trials at a minimum to avoid fatigue should be considered a priority. 
 \\
 Nass et al. put forward the social response theory  known as \textit{Computers Are Social Actors} (CASA). Their observations have shown that people treat computers as social actors \cite{nass1994computers}. Essentially, it means that people conform to social rules throughout their interactions and behave towards a computer as they would towards another human. Furthermore, people seem to mindlessly apply these social rules and other expectations in this context. Some examples are: attributing social categories as gender stereotypes, increased reciprocity in response to assistance,  self disclosure reciprocity. We can explain our participants' expectations in terms of the CASA paradigm. People expect strong people to pull harder in real life, so this expectation was projected onto virtual humans and its associated force \textit{mechanism}. It seems clear from our feedback that people assumed there was a machine, and only one, which provided the force and the virtual humans were meant to be representations of this force. 
 \\
@@ -970,6 +907,6 @@ Q1 shows the most deviation. Only a few participants reported seeing inaccuracie
 Many participants mentioned that holding the rope helped with realism. We believe the illusion of holding the rope was strongly supported by the haptic feedback. Participants did not generally look at their hands, and we speculate this was because of the feedback. It is surprising participants did not seem to rely on their visual senses as much when holding the rope. Dominance of the visual sense is a common human property \cite{posner1976visual}, however we believe that haptic feedback together with a social distractor kept people's gaze away from their body. Gonzalez and Lanier posit that sensory saturation will mitigate awareness of illusions and we believe haptic feedback contributed to higher body ownership in our case \cite{gonzalez2017model}. \\
 Participants appeared driven by curiosity and tugged the rope and moved it in unusual ways. We believe physical objects can contribute to higher presence and engagement in VR, if visual and tactile feedback are integrated in a congruent manner. Researchers have already begun exploring the advantages multi-sensory feedback for physical objects for VR (\cite{sra2015metaspace}). We consider they have great potential in serving as distractors and mitigating visual inconsistencies.  
 
-\subsection{Summary}
+\section{Discussion}
 
 Users showed varying degrees of VR physical illusions. These individual differences were observed in many experiments \cite{gonzalez2017model}. Some participants showed a strong inclination to believe someone is pulling the rope, while others always maintained the rope had the same resistance. Gonzalez and Lanier posit that providing a higher cognitive load would allow these illusions to take place more seamlessly.
